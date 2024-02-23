@@ -1,0 +1,11 @@
+1. Don't install with demo data
+2. We need to configure .htaccess to set RewriteBase
+3. Use composer command to download TastyIgniter and make zip i.e :
+php composer.phar create-project tastyigniter/tastyigniter [[softpath]]/tastyigniter304
+4. Use the following CLI command to install TastyIgniter :
+php artisan igniter:install (Demo data : no when CLI prompts for demo data)
+5. CLI installation steps are mentioned here:
+https://tastyigniter.com/docs/master/installation
+6. PHP REQUIREMENT LINK : https://tastyigniter.com/docs/master/installation#minimum-requirements
+7. Cron setup mentioned here : https://tastyigniter.com/docs/master/installation#setting-up-the-task-scheduler
+8. Please note that we haven't added mcrypt in extension list in info.xml though it's mentioned on official website. Since it's removed as of 7.2.0

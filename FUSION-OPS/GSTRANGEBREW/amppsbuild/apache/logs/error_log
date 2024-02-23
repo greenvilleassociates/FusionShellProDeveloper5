@@ -1,0 +1,36 @@
+[Tue Oct 12 23:11:02.185598 2021] [mpm_prefork:notice] [pid 6110] AH00163: Apache/2.4.41 (Unix) OpenSSL/1.0.2p PHP/7.3.11 configured -- resuming normal operations
+[Tue Oct 12 23:11:02.186259 2021] [core:notice] [pid 6110] AH00094: Command line: '/Applications/AMPPS/apache/bin/httpd'
+[Tue Oct 12 23:11:02.696426 2021] [mpm_prefork:notice] [pid 6110] AH00169: caught SIGTERM, shutting down
+[Tue Oct 12 23:11:04.623060 2021] [mpm_prefork:notice] [pid 6129] AH00163: Apache/2.4.41 (Unix) OpenSSL/1.0.2p PHP/7.3.11 configured -- resuming normal operations
+[Tue Oct 12 23:11:04.623690 2021] [core:notice] [pid 6129] AH00094: Command line: '/Applications/AMPPS/apache/bin/httpd'
+[Wed Oct 13 01:30:59.646067 2021] [php7:error] [pid 34673] [client 45.146.164.110:44862] script '/Applications/AMPPS/www/index.php' not found or unable to stat
+[Wed Oct 13 01:31:02.185368 2021] [core:error] [pid 36981] [client 45.146.164.110:50876] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Wed Oct 13 03:17:46.551699 2021] [cgi:error] [pid 36981] [client 86.105.195.154:41552] AH02811: script not found or unable to stat: /Applications/AMPPS/www/cgi-bin/.%%32%65
+[Wed Oct 13 03:17:46.653275 2021] [cgi:error] [pid 35989] [client 86.105.195.154:41560] AH02811: script not found or unable to stat: /Applications/AMPPS/www/cgi-bin/.%%32%65
+[Wed Oct 13 04:01:27.813397 2021] [core:error] [pid 42041] [client 222.190.142.202:1034] AH00126: Invalid URI in request GET /cgi-bin/.%2E/%2E%2E/%2E%2E/%2E%2E/etc/passwd HTTP/1.1
+[Wed Oct 13 04:01:27.853331 2021] [core:error] [pid 35989] [client 222.190.142.202:1035] AH00126: Invalid URI in request GET /cgi-bin/.%2E/%2E%2E/%2E%2E/%2E%2E/etc/passwd HTTP/1.1
+[Wed Oct 13 09:18:01.532670 2021] [cgi:error] [pid 36817] [client 60.212.251.221:60539] AH02809: Options ExecCGI is off in this directory: /Applications/AMPPS/www/setup.cgi
+[Wed Oct 13 17:52:05.008101 2021] [mpm_prefork:notice] [pid 6129] AH00171: Graceful restart requested, doing restart
+[Wed Oct 13 17:52:05.177630 2021] [mpm_prefork:notice] [pid 6129] AH00163: Apache/2.4.41 (Unix) OpenSSL/1.0.2p PHP/7.3.11 configured -- resuming normal operations
+[Wed Oct 13 17:52:05.177653 2021] [core:notice] [pid 6129] AH00094: Command line: '/Applications/AMPPS/apache/bin/httpd'
+[Wed Oct 13 18:00:50.235741 2021] [mpm_prefork:notice] [pid 6129] AH00169: caught SIGTERM, shutting down
+[Wed Oct 13 22:35:32.245708 2021] [mpm_prefork:notice] [pid 46936] AH00163: Apache/2.4.41 (Unix) OpenSSL/1.0.2p PHP/7.3.11 configured -- resuming normal operations
+[Wed Oct 13 22:35:32.246345 2021] [core:notice] [pid 46936] AH00094: Command line: '/Applications/AMPPS/apache/bin/httpd'
+[Thu Oct 14 00:04:30.875652 2021] [mpm_prefork:notice] [pid 46936] AH00169: caught SIGTERM, shutting down
+[Thu Oct 14 13:52:24.261599 2021] [mpm_prefork:notice] [pid 99037] AH00163: Apache/2.4.41 (Unix) OpenSSL/1.0.2p PHP/7.3.11 configured -- resuming normal operations
+[Thu Oct 14 13:52:24.289758 2021] [core:notice] [pid 99037] AH00094: Command line: '/Applications/AMPPS/apache/bin/httpd'
+[Thu Oct 14 14:20:52.032024 2021] [mpm_prefork:notice] [pid 99037] AH00169: caught SIGTERM, shutting down
+[Thu Oct 14 14:26:31.797531 2021] [mpm_prefork:notice] [pid 2543] AH00163: Apache/2.4.41 (Unix) OpenSSL/1.0.2p PHP/7.3.11 configured -- resuming normal operations
+[Thu Oct 14 14:26:31.798130 2021] [core:notice] [pid 2543] AH00094: Command line: '/Applications/AMPPS/apache/bin/httpd'
+[Thu Oct 14 15:10:47.862136 2021] [core:warn] [pid 7569] AH00098: pid file /Applications/AMPPS/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Oct 14 15:10:47.865613 2021] [mpm_prefork:notice] [pid 7569] AH00163: Apache/2.4.41 (Unix) OpenSSL/1.0.2p PHP/7.3.11 configured -- resuming normal operations
+[Thu Oct 14 15:10:47.865708 2021] [core:notice] [pid 7569] AH00094: Command line: '/Applications/AMPPS/apache/bin/httpd'
+[Thu Oct 14 15:44:21.442633 2021] [mpm_prefork:notice] [pid 7569] AH00169: caught SIGTERM, shutting down
+[Thu Oct 14 15:44:25.716269 2021] [mpm_prefork:notice] [pid 11594] AH00163: Apache/2.4.41 (Unix) OpenSSL/1.0.2p PHP/7.3.11 configured -- resuming normal operations
+[Thu Oct 14 15:44:25.716967 2021] [core:notice] [pid 11594] AH00094: Command line: '/Applications/AMPPS/apache/bin/httpd'
+[Thu Oct 14 15:55:53.185501 2021] [mpm_prefork:notice] [pid 11594] AH00169: caught SIGTERM, shutting down
+[Thu Oct 14 16:00:38.991779 2021] [mpm_prefork:notice] [pid 13132] AH00163: Apache/2.4.41 (Unix) OpenSSL/1.0.2p PHP/7.3.11 configured -- resuming normal operations
+[Thu Oct 14 16:00:38.992469 2021] [core:notice] [pid 13132] AH00094: Command line: '/Applications/AMPPS/apache/bin/httpd'
+[Thu Oct 14 16:35:49.548458 2021] [cgi:error] [pid 13133] [client 61.54.206.82:45032] AH02809: Options ExecCGI is off in this directory: /Applications/AMPPS/www/setup.cgi
+[Thu Oct 14 17:00:50.699836 2021] [cgi:error] [pid 13822] [client ::1:57197] AH01215: AH00526: Syntax error on line 55 of /Applications/AMPPS/apache/conf/extra/httpd-ssl.conf:: /Applications/AMPPS/ampps/softaculous/enduser/index.php, referer: http://localhost/ampps/index.php?act=ampps_domainmanage
+[Thu Oct 14 17:00:50.700380 2021] [cgi:error] [pid 13822] [client ::1:57197] AH01215: SSLCertificateFile: file '/etc/letsencrypt/live/www.capitoltechnology.us/fullchain.pem' does not exist or is empty: /Applications/AMPPS/ampps/softaculous/enduser/index.php, referer: http://localhost/ampps/index.php?act=ampps_domainmanage

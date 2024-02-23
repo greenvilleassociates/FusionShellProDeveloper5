@@ -1,0 +1,27 @@
+[8.8.3]
+[*] Minor bugfixes
+
+[8.8.0]
+[+] IP whitelisting added for Recaptcha
+[+] EnableFailedLoginBlock records are now deleted after they expire
+[+] Added setting for hiding Logout link
+[*] Fixed issue with displaying angle brackets in server error messages
+[*] Fixed issue with adding contacts outside suggested list
+
+[8.6.2]
+[*] Fixed an issue with adding message recipients
+
+[8.6.0]
+[*] Various bugfixes
+
+[8.5.3]
+[+] ContentSecurityPolicy feature revised, modules can add their handlers for it
+[+] 2FA revised, security keys and backup codes are now supported
+[*] Fixed an issue with double quote character in Sieve rules
+[*] Fixed an issue when pressing R added that character to the reply
+[*] Fixed an issue with displaying inline images with "image/jpg" content type
+[*] Fixed an issue with link URL getting replaced upon changing visual style
+[*] Fixed group names autocompletion issue
+[*] Fixed visual issue with Sieve redirect feature
+[*] Fixed an issue with plaintext part of message cut off
+[*] Minor bugfixes and improvements

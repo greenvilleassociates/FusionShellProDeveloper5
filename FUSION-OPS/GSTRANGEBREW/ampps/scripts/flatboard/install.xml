@@ -1,0 +1,45 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{settings}}</heading>
+			<input type="text" name="site_name" size="30" value="My Flatboard">
+				<head>{{name}}</head>
+				<exp>{{name_exp}}</exp>
+			</input>
+			<input type="text" name="site_desc" size="30" value="My Flatboard forum">
+				<head>{{site_desc}}</head>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_username" size="30" value="admin">
+				<head>{{ad_name}}</head>
+			</input>
+			<input type="text" name="admin_pass" size="30" value="pass">
+				<head>{{ad_pass}}</head>
+				<handle>__ad_pass</handle>
+			</input>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_email" size="30" value="admin" softmail="true">
+				<head>{{ad_email}}</head>
+				<handle>__email_address</handle>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_lang}}</heading>
+			<input type="select">
+				<select name="language">
+					<option value="en-US">English</option>
+					<option value="fr-FR">French</option>
+					<option value="de-DE">German</option>
+					<option value="it-IT">Italian</option>
+					<option value="ru-RU">Russian</option>
+				</select>
+				<head>{{select_lang}}</head>
+			</input>
+		</group>
+	</settings>
+	<files>
+		<exclude>install.php</exclude>
+	</files>
+</softinstall>

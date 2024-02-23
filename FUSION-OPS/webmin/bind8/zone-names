@@ -1,0 +1,5 @@
+base=/etc
+pidfile=/var/run/named.pid
+no_chroot_config=0
+pidfile_config=/var/run/named/named.pid /private/var/run/named/named.pid
+version=3

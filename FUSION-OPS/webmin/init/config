@@ -1,0 +1,12 @@
+reboot_command=reboot
+order=0
+darwin_setup=/Library/StartupItems
+local_script=/etc/rc
+status_check=0
+plist=StartupParameters.plist
+sort_mode=0
+startup_dirs=/System/Library/StartupItems:/Library/StartupItems
+hostconfig=/etc/hostconfig
+shutdown_command=shutdown -h now
+no_chkconfig=0
+atboot_product=webmin

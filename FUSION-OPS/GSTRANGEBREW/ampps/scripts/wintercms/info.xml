@@ -1,0 +1,95 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/WinterCMS
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/cms/WinterCMS
+	</ratings>
+	<space>
+		78105825
+	</space>
+	<support>
+		https://wintercms.com/support
+	</support>
+	<version>
+		1.1.6
+	</version>
+	<mod>2</mod>
+	<release_date>25-08-2021</release_date>
+	<admin>backend</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.9" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="pdo" />
+	<requirement check="php" type="extension" name="simpleXML" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<requirement check="php" type="extension" name="filter" />
+	<requirement check="php" type="extension" name="hash" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">WinterCMS</font> is a free, open-source content management system based on the Laravel PHP framework. 
+		<br /><br />
+		Developers and agencies all around the world rely upon Winter CMS for its quick prototyping and development, safe and secure codebase and dedication to simplicity.
+		<br /><br />
+		WinterCMS is licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT license.</a>
+		</english-overview>
+		<english-features>
+		<ul>
+			<li><b>Development, simplified</b> :
+				<br/>With Winter CMS, you can build intricate systems with minimal effort. Winter CMS is a content management system built from the base up to be simple for clients and end-users, but powerful for developers.
+			</li>
+			<li><b>Features for Designers</b> :
+					<ul>
+						<li>
+							<b>Easy theme development</b> :
+							<br/>Winter CMS unburdens you of limitations with your front-end design by allowing you to create fully customisable themes in your CSS and JavaScript frameworks of choice.
+						</li>
+						<li>
+							<b>Simple templating</b> :
+							<br/>With Winter CMS, templates and layouts are simply HTML, making it super easy to structure your layouts and pages for the best effect.
+						</li>
+					</ul>
+			</li>
+			<li><b>Features for developers</b> :
+					<ul>
+						<li>
+							<b>Strong framework</b> :
+							<br/>Winter CMS is based on the Laravel framework, a wildly popular PHP framework, offering a strong base of functionality which Winter CMS builds further upon.
+						</li>
+						<li>
+							<b>AJAX made easy</b> :
+							<br/>Dynamic content updates and background tasks are a breeze with Winter CMS with simple AJAX framework.
+						</li>
+					</ul>
+			</li>
+			<li><b>Features for clients</b> :
+					<ul>
+						<li>
+							<b>Uncomplicated page editing</b> :
+							<br/>Backed up by the Static Pages plugin, Winter CMS makes it incredibly easy for clients to manage and update the contents of their site.
+						</li>
+						<li>
+							<b>Full-featured media manager</b> :
+							<br/>Winter CMS comes in-built with a robust media management system, giving clients the ability to add and manage images, videos and other types of documents to be made available on their site.
+						</li>
+					</ul>
+			</li>
+		</ul>
+		</english-features>
+		<english-ad_dir>Admin Folder</english-ad_dir>
+		<english-err_passlen4>The password length should be 4 or more characters.</english-err_passlen4>
+	</languages>
+</soft>

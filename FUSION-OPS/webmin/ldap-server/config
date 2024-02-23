@@ -1,0 +1,6 @@
+ldap_user=ldap
+browse_max=100
+attr_count=6
+schema_dir=/etc/ldap/schema
+slapd=slapd
+config_file=/etc/ldap/slapd.conf

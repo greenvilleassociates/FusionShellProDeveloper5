@@ -1,0 +1,12 @@
+.editorconfig
+.gitignore
+.htaccess
+README.md
+assets
+composer.json
+content
+favicon.ico
+index.php
+kirby
+site
+media

@@ -1,0 +1,35 @@
+ Release note (2021 June 12)
+v2.2.7-2
+
+    Errata #2: More PHP8 fixes, fixed issue where some language phrases weren't loaded properly, added HTML purifier v4.13 library.
+    Bug fix: PHP 8.0 - the required attribute check for datepicker
+    Bug fix: Config save result output invalid tag - supposed to be x-ui:schlix-config:save-result
+    Bug fix: Composer issue
+
+Release note (2021 June 05)
+v2.2.7-1
+
+    Bug fix: PHP 8.0 - the required attribute check for datepicker
+    Bug fix: Config save result output invalid tag - supposed to be x-ui:schlix-config:save-result
+    Bug fix: Composer issue
+
+Release note (2021 March 16)
+v2.2.6-6
+
+    Errata #6: Fixed upgrader error for PHP8, minor PHP8 fixes (users class)
+    Errata #5: Fixed cmsCurl response type, fixed gallery save function, added information about view template files (*.template.php) in Help - About page for each application/block/macro
+    Errata #4: Fixed menu drag and drop, corrected email setup UI, bootstrap slideshow next/prev, fixed refresh datatable function.
+    Errata #3 More PHP8 compatibility fixes, UI enhancements (added some colours to tabs, changed default font to Roboto)
+    Errata #2: Updated Bootstrap to v4.6.0, more PHP8 compatibility fixes
+    PHP 8.0 compatibility (now compatible with PHP 5.6 - 8.0) excluding the new JIT flag (there is a bug in PHP itself).
+    Upgraded PHPMailer to v6.2.0 for PHP 8.0 compatibility.
+
+Release note (2021 March 15)
+v2.2.6-5
+
+    Errata #5: Fixed cmsCurl response type, fixed gallery save function, added information about view template files (*.template.php) in Help - About page for each application/block/macro
+    Errata #4: Fixed menu drag and drop, corrected email setup UI, bootstrap slideshow next/prev, fixed refresh datatable function.
+    Errata #3 More PHP8 compatibility fixes, UI enhancements (added some colours to tabs, changed default font to Roboto)
+    Errata #2: Updated Bootstrap to v4.6.0, more PHP8 compatibility fixes
+    PHP 8.0 compatibility (now compatible with PHP 5.6 - 8.0) excluding the new JIT flag (there is a bug in PHP itself).
+    Upgraded PHPMailer to v6.2.0 for PHP 8.0 compatibility.

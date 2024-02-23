@@ -1,0 +1,16 @@
+extended_inetd=0
+qm_mode=0
+inetd_conf_file=/etc/inetd.conf
+show_empty=0
+deny_file=
+allow_file=
+sort_mode=0
+rpc_file=/etc/rpc
+display_max=100
+tcpd_path=/usr/libexec/tcpd
+rpc_inetd=0
+protocols_file=/etc/protocols
+services_file=/etc/services
+restart_command=ps ax | grep inetd | head -1 | awk '{ print $1 }' | xargs kill -HUP
+rpc_protocols=tcp udp
+ipv6=0

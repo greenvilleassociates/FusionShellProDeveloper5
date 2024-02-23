@@ -1,0 +1,4 @@
+1. Upgrade not possible since the version number is not available in the list while upgrading it via third link. Check in the next version.
+2. PHP REQUIREMENT LINK : https://github.com/slackero/phpwcms#server-system-requirements
+3. We have change PHP requirement to 5.4 because it throws syntax error on PHP 5.3 while uploading any file.
+(MIN PHP now 7.0.0 required since version 1.9.28 as /vendor/composer/platform_check.php throws error that Your Composer dependencies require a PHP version ">= 7.0.0" on login page)

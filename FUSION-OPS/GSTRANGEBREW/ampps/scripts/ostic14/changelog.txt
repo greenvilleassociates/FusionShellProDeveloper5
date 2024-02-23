@@ -1,0 +1,77 @@
+osTicket v1.14.8
+Improvements
+
+    issue: Auto-Assign Comments Var (c3171c3)
+    issue: List Item Properties On Mouseover (a6a7192)
+    issue: def_assn_role (6ad568f)
+    search: Child Thread Relation (08785f9)
+
+Security
+
+    security: PwReset Username and Username Discoverability (e282910, 86165c2)
+    security: SSRF External Images (1c6f98e)
+    xss: Stored XSS/Domain Whitelist Bypass (4b4da5b)
+    security: Recipient Injection via User's Name (7c5c584)
+    xss: Advanced Search (4a8d3c8)
+    xss: Tasks (b01c6a2)
+
+
+osTicket v1.14.7
+Enhancements
+
+    redactor: Upgrade to version 3.5.1 (2617f53)
+
+Improvements
+
+    issue: Setup Admin Password Heltip Verbiage (7866a72)
+    issue: getDBVersion() SQL Errors (43210e3)
+    issue: Missing Thread On Referral Check (1359d91)
+    readme: Update PHP Version (a1cf24f)
+    typo: Default Sorting (89c322b)
+    issue: Choices Field Sanitization (07526af)
+    issue: "New Task Alert" email template typo (8178b4d)
+    issue: Edit Entry Dropped Attachments (a9a64ed)
+    issue: EmailTest Draft (27259e1)
+    issue: Release Notes Links (e9a2155)
+    Role: Handle null perms (4211952)
+    Issue: Missing null check in Staff->updatePerms() (f9626f8)
+    Banlist sorting by Updated (15ccc71)
+    issue: ticket.dept.sla Variable sla_id (bf15d6f)
+
+Security
+
+    xss: SVG Image (68dcaa2)
+    security: open.php Refresh (b8603c7)
+    xss: Client-Side i18n (fd560df)
+    session: Verify UserAgent String (f71c954)
+
+osTicket v1.14.6
+Enhancements
+
+    redactor: Upgrade to version 3.4.9 (ab40f97)
+
+Improvements
+
+    issue: markAs Popup Manager (No Access) (8d1d623)
+    issue: Task last_update Var (08cd762)
+    issue: SCP Login Redirect (9b12a54)
+    issue: Client-Side Reply Draft Saving (996cd9e)
+
+osTicket v1.14.5
+Enhancements
+
+    typo: Change User Confirmation Popup (79e6513)
+    redactor: Upgrade to version 3.4.6 (5c77b0d)
+
+Improvements
+
+    issue: MailFetch Inline Disposition (fbf0c7d)
+    issue: Editor Spacing (a6cbc5c)
+    Issue: Collaborator Adding New Collabs (a4ab6b6)
+    mail: Reply to Ticket Owner Only (a4bb20a)
+    dept: Dept Deletion Bug (7cba73d)
+    issue: Task From Ticket (4b48456)
+
+Security
+
+    security: Parent Ticket Access (Client) (5972fe8)

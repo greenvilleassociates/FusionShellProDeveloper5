@@ -1,0 +1,5 @@
+1. Install Composer and create zip for package
+2. Give permissions 0777 to /log and /cache before installation and access /web Directoy to start installation.
+3. /.htaccess is our file which is added to redirect Front end to /web directory. So don't remove it.
+4. PHP REQUIREMENT LINK: http://doc.thelia.net/en/documentation/installation/index.html
+(Check composer.json as well).

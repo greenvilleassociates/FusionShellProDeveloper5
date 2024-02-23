@@ -1,0 +1,60 @@
+Changes in 3.2.4 - 2nd October 2021
+- added "Due date" tag for canned responses
+- security: error message not appropriately sanitized, reported by msry1
+- fix: insert canned responses tags at pointer focus
+- fix: inconsistent storage of plain text message version in RTF mode
+- fix: due date not formatted for staff with view-only access
+- fix: avatar uppercase letter shows ? in multi-byte names
+- fix: cannot uncheck "Assigned to others" on ticket export page
+- updated TinyMCE to 5.9.2
+- minor styling and usability changes
+
+Changes in 3.2.3 - 11th August 2021
+- automatically link URLs in TinyMCE by default
+- removed the db_vrsn setting, it is not needed anymore
+- all ticket list pages now show the "Auto reload page" widget
+- fix: forgot ticket ID email list does not include tickets with a custom status
+- fix: the "reply below this line" tag not added in IMAP fetching
+- fix: add an extra empty space after ticket tracking URL to make them clickable in Outlook
+- fix: overdue cron notifications not working if date format is not YYYY-MM-DD
+- fix: installation script doesn't accept UTF-8 chars for admin username
+- fix: priority pre-select via URL parameter doesn't work in the public side
+- fix: unable to sort ticket columns after setting a default view
+- fix: Hesk doesn't accept database username with &
+- updated TinyMCE to 5.8.2
+
+Changes in 3.2.2 - 13th March 2021
+- fix: replies via email not showing content when Rich Text (HTML) formatting is turned on
+- fix: reset ticket session data if any variable is sent to the Create new ticket form
+- due date and ticket language parameters can now be passed to the Create new ticket form
+
+Changes in 3.2.1 - 11th March 2021
+- fix: merged tickets not showing replies with Rich Text (HTML) formatting turned on
+- fix: SMTP class does not support TLS 1.2 in PHP >= 5.6.7 and < PHP 7.2
+- fix: admin panel modals hidden on small screens
+- updated TinyMCE to 5.7.0
+
+Changes in 3.2.0 - 28th February 2021
+- tickets can now have a due date set
+- added support for HTML-formatted ticket messages/replies (staff only)
+- added links to filter tickets by assignment/due soon/overdue quickly
+- do not update "lastchange" timestamp on Resolved tickets when deleting a user or category
+- support for %%SITE_TITLE%% in email subjects
+- improved button text display on non-English versions
+- added an easy way to load an extra custom CSS file to Hesk admin
+- staff can now change ticket category when submitting a ticket
+- staff can now set ticket (customer) language when submitting a ticket
+- cron files can now have an access key set to authorize web access
+- security: fixed persistent XSS, reported by Charley Celice of Quorum Cyber (www)
+- fix: make sure ticket list always has clickable links in mobile view
+- fix: ticket list mismatch after deleting a custom field
+- fix: check if JSON is enabled when installing/updating Hesk
+- fix: bulk ticket actions select vertical scroll bar off-screen on some mobile devices
+- fix: set cookie SameSite attribute to "None" if Hesk is allowed to be displayed in frames
+- fix: message encoding issue when previewing service messages
+- fix: properly escape edge-case HTML special characters and backslashes
+- fix: "Can unban ips" permission should also enable "Can ban ips"
+- fix: email notification setting when someone adds a note not respected
+- fix: respect custom field position when editing a ticket
+- fix: properly encode CDATA closing tag
+- minor styling and usability changes

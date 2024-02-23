@@ -1,0 +1,4 @@
+mods=core mod_so http_core prefork
+time=1569029981
+cmd=/usr/sbin/httpd
+version=2.434

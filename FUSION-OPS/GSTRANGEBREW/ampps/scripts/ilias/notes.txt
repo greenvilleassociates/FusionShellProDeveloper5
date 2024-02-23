@@ -1,0 +1,30 @@
+1. Before starting manual installation copy /setup/minimal-config.json to /setup/config.json and fill neccessary details refering following guide. (Add parameter "Database" as well) https://docu.ilias.de/ilias.php?ref_id=367&obj_id=124784&cmd=layout&cmdClass=illmpresentationgui&cmdNode=iv&baseClass=ilLMPresentationGUI#install-ilias
+
+2. Install using following command.
+php setup/setup.php install setup/config.json
+
+### Keep root directory writable before starting manual installation ###
+
+To fill config.json: https://raw.githubusercontent.com/ILIAS-eLearning/ILIAS/release_7/setup/README.md
+Default Credentials are:
+Username: root
+Password: homer
+
+Database Recommendation: https://docu.ilias.de/ilias.php?ref_id=367&obj_id=124784&cmd=layout&cmdClass=illmpresentationgui&cmdNode=iv&baseClass=ilLMPresentationGUI#database-recommendations
+
+3. Enter "clientid" in Client ID.
+4. set location of ilias.log in [[softdatadir]]\ilias.log in manual
+5. set location of log folder in [[softdatadir]]\log in manual
+6. Copy data/client_id folder from manual. (Delete or do not copy client.ini.php)
+7. client.ini.php is writable admin can delete and create new client, permission is required to delete the client.
+8. Keep timezone = "America/New_York" and [log] details as it is in ilias.ini.php
+9. Check and create symblinks in every version.
+10. PHP REQUIREMENT LINK : https://docu.ilias.de/ilias.php?ref_id=367&obj_id=124784&cmd=layout&cmdClass=illmpresentationgui&cmdNode=iv&baseClass=ilLMPresentationGUI#recommended-setup-for-running-ilias
+11. Windows not supported : https://www.ilias.de/docu/goto.php?target=lm_367&client_id=docu#supported-platforms
+12. apply following settings in php.ini to resolve strict error confirmed with vendor
+error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT;
+display_errors = Off
+13. SQL export doesn't works on server, take sql dump using command.
+14. Keep ilias_uuid value as it is because it is constant for all installations. (/setup/sql/ilias3.sql)
+15 We have created config.json file in softdatadir because installer states to keep this file outside doc-root.
+https://docu.ilias.de/goto_docu_pg_124784_367.html

@@ -1,0 +1,11 @@
+create database capusjoomla;
+create user 'capus_sa2'@'localhost' identified by 'test1234';
+grant all on capusjoomla.* to 'capus_sa2'@'localhost';
+grant all on capuswiki.* to 'capus_sa2'@'localhost';
+grant all on capuswp1.* to 'capus_sa2'@'localhost';
+grant all on capuswp2.* to 'capus_sa2'@'localhost';
+grant all on capuswp3.* to 'capus_sa2'@'localhost';
+create database capuswiki;
+create database capuswp1;
+create database capuswp2;
+create database capuswp3;

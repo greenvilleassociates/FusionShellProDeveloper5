@@ -1,0 +1,7 @@
+1) PHP REQUIREMENT LINK : https://github.com/Fred89/flatboard#requirements
+2) Give writable permissions to root folder and 'theme' folder while manual installation.
+3) Copy entire contents of the /data folder except the config files in /data/config/config.dat.php, /data/plugin/onlineDB.dat.php and /data/key.php.
+4) User would need to assign writable permissions on Non suPHP servers to config file /data/config/config.dat.php for adding moderator, editing site details, or to change the theme.
+5) For manual installation no need to use their unpacker(index.php) file provided outside the zip package as we unzip manually via unzip command.
+6) Release date taken from here : see changelog
+7) Keep editor as "BBcode" in manual installation.

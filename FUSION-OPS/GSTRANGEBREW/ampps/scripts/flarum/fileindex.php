@@ -1,0 +1,15 @@
+.editorconfig
+.nginx.conf
+CHANGELOG.md
+LICENSE
+README.md
+composer.json
+composer.lock
+extend.php
+flarum
+public
+site.php
+storage
+vendor
+.htaccess
+config.php

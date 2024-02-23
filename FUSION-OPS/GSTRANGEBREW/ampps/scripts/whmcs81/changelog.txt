@@ -1,0 +1,197 @@
+Version 8.1.3 Release Notes
+Security
+
+CORE-16334 - REDACTED
+
+Version 8.1.2 Release Notes
+Maintenance
+
+CORE-16265 - Correct import of replies to tickets not associated with a client
+CORE-16266 - Ensure empty optional custom fields are provided to provisioning module functions
+CORE-16300 - Improve environment support for custom field key comparison
+Modules
+
+MODULE-7559 - Correct API value of package for DirectAdmin
+MODULE-7591 - Prevent erroneous validation error for manual invoice payment
+
+Version 8.1.1 Release Notes
+
+Maintenance
+
+ADDON-6136 - Ensure Google Analytics outputs script to page
+CORE-15519 - Ensure ticket replies from associated users are accepted
+CORE-15694 - Prevent erroneous field being displayed after failed domain contact change
+CORE-16005 - Correct rendering for sequential error related to failed 2FA disablement
+CORE-16014 - WHOIS update for .sa TLD
+CORE-16016 - WHOIS update for .ie TLD
+CORE-16017 - Improve description of mail import command
+CORE-16022 - Prevent duplicate alert for invalid login on Twenty-One
+CORE-16025 - Provide or utilize translation strings for various text in Twenty-One
+Also known as: CORE-16055, CORE-16194
+CORE-16026 - Correct theme inheritance for pagination property
+CORE-16029 - Correct alignment of date picker element for Prune Ticket Attachments
+CORE-16031 - Improve responsiveness for domain checker
+CORE-16033 - Provide integration to HMRC for GB VAT number validation
+Also known as: CORE-16220
+CORE-16038 - Correct erroneous alert of oustanding invoice in upgrade/downgrade modal
+CORE-16040 - Improve description of invite function
+CORE-16041 - Provide password type custom field values decrypted to provisioning functions
+CORE-16046 - Correct link for OX Manage Email Accounts
+CORE-16048 - Prevent indefinite retry of failed email campaign
+CORE-16049 - Correct display of module log response
+CORE-16050 - Correct sidebar collapse/expansion for cart with Twenty-One
+CORE-16051 - Improve handling of invalid parent property of theme
+CORE-16058 - Update clients only ticket department description
+CORE-16070 - Correct CSS inclusion for viewquote template
+CORE-16071 - Correct error on unique email requirement for authenticated user client creation via cart
+CORE-16074 - Improve design of admin edit button for knowledgebase articles and categories in Twenty-One
+CORE-16081 - Correct path for view cart icon of Twenty-One
+CORE-16084 - Prevent erroneous ajax request on automation page
+CORE-16086 - Remove legacy smarty variables & increase performance of client area
+CORE-16092 - Improve cPanel template for Bootstrap 3 and 4 compatibility
+CORE-16093 - Generate order invoices respective to user's language
+CORE-16094 - Update template path comparison for non-standard file environments
+CORE-16098 - Optimise Additional Domain Fields display in mobile view
+CORE-16104 - Improve CSRF error rending for admin login
+CORE-16105 - Improve Twenty-One styling for hyperlinks
+CORE-16106 - Improve formatting of intelligent search results when a company name is present
+CORE-16107 - Prevent missing function error in DeleteClient API
+CORE-16108 - Improve Plesk account reindexing upgrade routine
+CORE-16109 - Improve Twenty-One styling for block quotes
+CORE-16111 - Correct inclusion in Twenty-One related to certificate reissuance
+CORE-16114 - Improving handling for deleted orderform
+CORE-16118 - Restore aggregation of default Currency considering legay schema
+CORE-16119 - Correct add payment address action for Twenty-One
+CORE-16124 - Add missing translation string for 'copy'
+CORE-16125 - Correct inspection of 'admin' parameter for OpenTicket API
+CORE-16128 - Utilize translation strings for announcements in Twenty-One
+CORE-16131 - Correct display of CC recipients for guest tickets
+CORE-16132 - Correct date picker attribute for Override Auto-Suspend option
+CORE-16138 - Correct display of error message on invoice payment in Twenty-One
+CORE-16147 - Ensure correct reply-to is used for all mail providers
+CORE-16161 - Improve display of ticket information in Twenty-One
+CORE-16164 - Improve ticket data aggregation for environments without native type handling
+CORE-16165 - Improve render of Manage Domains for Twenty-One
+CORE-16169 - Correct input handling for registration form
+CORE-16170 - Correct link for close ticket in Twenty-One
+CORE-16172 - Correct link for network alerts in cart with Twenty-One
+CORE-16187 - Utilize translation string for Contact Us in Twenty-One
+CORE-16193 - Correct button for Registrar Lock in Twenty-One
+CORE-16200 - Ensure admin notification for ticket change uses correct respondent name
+CORE-16203 - Prevent erroneous warning regarding template change when configuring Stripe
+CORE-16208 - Prevent error when updating while hooks debug is enabled
+CORE-16215 - Provide better error message when prematurely accessing application during installation
+CORE-16219 - Correct display of 'amount' on order summary for domain renewal with previous price override
+CORE-16233 - Correct checkout button for domain suggestion results
+CORE-16238 - Correct field requirement assertion for new client creation in cart checkout
+Modules
+
+MODULE-7550 - Ensure failure is logged for CreateFileWithinRoot in Plesk
+MODULE-7558 - Redirect to clientarea if session is invalidated during PayPal Checkout subscription setup
+MODULE-7566 - Ensure card billing address is not reset upon invoice payment with Stripe
+MODULE-7568 - Ensure consistent metadata values are sent to Stripe
+MODULE-7569 - Correct reCAPTCHA error with Stripe
+MODULE-7570 - Correct display of payment buttons on invoice for 2Checkout
+MODULE-7571 - Correct language selection for 2Checkout
+MODULE-7573 - Ensure fees are in client's currency with Stripe
+MODULE-7576 - Provide CIRA agreement for .ca TLDs
+MODULE-7578 - Redirect to clientarea if session is invalidated during PayPal Checkout one-time payment
+Also known as: CORE-16192
+API
+
+CORE-15959 - Correct inspection of email address for client associate when clientid is not provided to OpentTicket
+CORE-16076 - Implement listing active registrars with API GetRegistrars
+CORE-16101 - Correct order of operations for invoice update in InvoiceUnpaid API
+Languages
+
+CORE-15964 - Correct orderform translation string for German
+CORE-16030 - French language improvements
+CORE-16235 - Utilize translation string for Digicert feature comparison in Twenty-One
+
+Version 8.1.0 Release Notes
+Maintenance
+
+CORE-10886 - Do not send "Invoice Created" email when Order does not have invoice
+CORE-12227 - Add search and UI improvements for module log
+CORE-14738 - Provide Health Check for known MySQL variable issues
+CORE-14777 - Correct unpaid invoice total calculations on "My Invoices" sidebar
+CORE-15210 - Improving logging of admin actions related to affliate operations
+CORE-15211 - Include negative tax rates in invoice email
+CORE-15586 - Prevent error when transferring domain whose associated service's server does not define nameservers
+CORE-15595 - Correct language selection for Admin New Order notification
+CORE-15677 - Ensure Load Saved Message options reflect selected email type
+CORE-15709 - Display Generic Feedback on Ticket Feedback Comments report
+CORE-15711 - Improve support department POP setup UI
+CORE-15739 - Only render Mass Payment button when enabled and client has unpaid invoices
+CORE-15751 - Optimise downloads routine when no service provided
+CORE-15774 - Improve resilience of domain SSL status sync
+CORE-15795 - Prevent superfluous empty option for CC Recipients when viewing ticket as admin
+CORE-15804 - Correct filtering behavior of client custom fields for Email Campaigns
+CORE-15820 - Correct typo in "Available Merge Fields" section on email templates
+CORE-15869 - Ensure client currency is used if available in admin order process
+CORE-15878 - Prevent quantity factor of recurring amount when creating a line item of a multiple quantity service
+CORE-15879 - Correct One Time promo calculation for multiple quantity service
+CORE-15881 - Ensure time input is used when provided for AddInvoicePayment API
+CORE-15882 - Ensure all distributed mail provider support the Reply-To header
+CORE-15890 - Add Facebook Sign-in Feedback Error String to Language File
+CORE-15897 - Correct display of country on save of Contact in Client area
+CORE-15898 - Correct generation of UUIDs required for API actions
+CORE-15899 - Remove reference to obsolete client_password merge field
+CORE-15905 - Retain invites for 7 days following expiry
+CORE-15907 - Correct saving of input for Mail Provider details
+CORE-15910 - Improve small port view for password reset in Twenty-One
+CORE-15913 - Implement automatic pruning of Module Log
+CORE-15914 - Update WHOIS server for .NU
+CORE-15922 - Improve display of navigation bar with many items for Twenty-One
+CORE-15923 - Correct template inheritance for Marketconnect Upsells
+CORE-15932 - Update EV upsell messaging
+CORE-15940 - Correct display of Allow Multiple Quantities in Products/Services
+CORE-15942 - Prevent partial render on invalid ticket request
+CORE-15944 - Ensure correct expiry date is set for multi-year registrarion
+CORE-15950 - Include pid if available when redirecting to product group
+CORE-15952 - Update EV icon
+CORE-15953 - Ensure registrant contact fields are visible when bulk editing domain contact information
+CORE-15955 - Implement GetUsers API
+CORE-15958 - Improve remote bank + remote gateway migration
+CORE-15960 - Correct inheritance for invoicepdf.tpl
+CORE-15966 - Ensure OX App Suite upgrade utilises quantities
+CORE-15978 - Ensure Security Questions in use cannot be deleted
+Also known as: CORE-15981
+CORE-15994 - Correct internal type related to display of domain registration pricing
+CORE-16013 - Prevent error when providing invalid domain search term in Admin WHOIS lookup
+Modules
+
+MODULE-7537 - Ensure credits apply to accounts with addons
+MODULE-7541 - Transliterate Statement Descriptor Suffix for Stripe
+MODULE-7545 - Correct server sync API request for DirectAdmin
+
+CORE-15928 - Improve resilience of mod_pleskaccounts update routine
+Addons
+
+ADDON-6132 - Improve styling of Licensing addon for use in theme Twenty-One
+Project Management Addon
+
+PMA-188 - Correct display of associated projects when using custom ticket mask
+PMA-189 - Improve compatibility with Twenty-One
+Also known as: PMA-190
+API
+
+CORE-16008 - Rectify distributed example for OrderProductPricingOverride hook
+Languages
+
+CORE-15888 - Update Azerbaijani translations
+CORE-15921 - Update Hungarian translations
+CORE-15925 - Improvements for Admin Hebrew translation
+CORE-15927 - Improvements for Client Hebrew translation
+
+Version 8.0.4 Release Notes
+Maintenance
+
+CORE-15587 - Correct redirect for OpenID authorization
+CORE-15608 - Prevent error on Compose for campaign associated with client group
+CORE-15611 - Prevent erroneous validation error during cart creation of new account
+CORE-15619 - Correct behavior for legacy method ClientArea::getUserID()
+CORE-15633 - Prevent error on EmailPreSend abort
+Modules
+
+MODULE-7526 - Correct available variables for DomainSync function invocation

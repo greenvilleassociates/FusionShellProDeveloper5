@@ -1,0 +1,141 @@
+Release Notes for 2.8
+--------------------------
+
+Features
+
+    PHP 8 support
+    Where appropriate, themes can now allow minimal styling (bold, italic, underline) to be preserved in titles
+    Administrators can select the default query type for simple search (#797, contributed by @luku)
+    It's now possible to add files through the API even when the default job dispatcher is non-synchronous
+    HTML head now includes author and copyright meta-tags as set in the admin (#918, contributed by @DBinaghi)
+    Theme header images can now accept a setting for the alt text for the image (#925)
+    New option to move files to storage using copy instead of rename (sometimes useful when files are stored on a separate filesystem) (#934)
+
+Bugs Fixed
+
+    Shortcodes with no arguments given could behave incorrectly and throw errors on PHP 7.1+
+    Fixed the admin file edit form to correctly apply HTML filtering (#935)
+    Fixed a leftover PHP 7.2 deprecation warning in the YAML component (rarely used)
+
+Changes
+
+    Login forms now use simpler styling to improve appearance with longer text (as in when using some locales)
+    The search reindex process will now continue through errors (#930, contributed by @timstallmann)
+    Allowed size for theme uploads increased to 1 MB
+
+For Developers
+
+    Omeka_Record_AbstractRecord::delete() now returns true on success (#906)
+    New rich_title property for records
+    The default fallback image for files (the "page" icon) can now be overridden like the type-specific icons by passing * as the type to add_file_fallback_image (#916, contributed by @DBinaghi)
+    tag_attributes now accepts int and float values instead of stripping them (#921)
+    Shortcode arguments are now always an array
+    File uploads can now specify the key order to set file order within an item directly at ingest
+    getID3 updated to 1.9.20
+    HTMLPurifier updated to 4.13.0
+	
+Release Notes for 2.7.1
+---------------------------
+
+The minimum required version of PHP is now 5.4.
+Features
+
+    PHP 7.4 support
+
+Bugs Fixed
+
+    Direct upgrades from significantly old versions could fail on the "unEntityTags" migration
+    Tags could not be deleted through the API
+    The link to the Omeka documentation on error pages referred to the older Omeka site structure
+    Mismatched closing tag on login pages
+    Files with large amounts of embedded metadata could fail when uploading
+
+Internationalization
+
+    Updates to Catalan, Esperanto, Spanish, French, Italian, Japanese, Brazilian Portuguese, Albanian, Ukrainian
+
+External Libraries
+
+    getID3 updated to 1.9.18
+    HTML Purifier updated to 4.12.0
+    Removed Zend_Test_PHPUnit and Zend_Tool components
+
+Release Notes for 2.7
+---------------------------
+
+Features
+
+	PHP 7.3 compatibility
+	Version notifications for new releases of plugins and themes
+	Omeka now respects the X-Forwarded-Proto header for determining if it should generate http: or https: absolute URLs. This is primarily useful for users hosting Omeka behind a reverse proxy that's handling the HTTPS connections.
+	A new sslTrustProxy configuration key is available for users using the ssl force-redirect configuration to trust the X-Forwarded-Proto header and not issue unnecessary, looping redirects
+	New forceSSL option for ZendS3 storage adapter to force use of https: addresses for file URLs (#877, contributed by @ebellempire)
+	mail.force_from and mail.force_from_name options for forcing From: address for all outgoing email
+
+Bugs Fixed
+
+	Tag UI javascript error when editing items (#853, contributed by @luku)
+	Inconsistent tag markup for new and existing tags when editing items (#854, contributed by @luku)
+	Deprecation notice when running on PHP 7.2+ (#860, contributed by @Daniel-KM)
+	"Remember me" checkbox on login non-functional on PHP 7.2+ (#872)
+	Invalid SQL mode error when running on MySQL 8 (#858)
+	Migration error when migrating from 1.x using MySQL 5.7+ (#831)
+	item_next and item_prev filters had no way to indicate the end of the sequence (#851)
+	Inconsistent form enctype between collection add and edit forms (#856)
+	items_output_url page detection fails on "items" pages added by plugins, leading to incorrect feed URLs (#880)
+
+Improvements
+
+	"Simple" item search converted to use subqueries, leads to a significant observed speed increase on modern MySQL versions
+	Public-side file show page now includes a link back to the parent item
+	"Browse by tag" view for items now sorts tags alphabetically by default
+	New "back to top" link in admin footer
+	ZendS3 storage adapter now leaves slashes unencoded in URLs
+	ZendS3 storage adapter will "chunk" expiration times, allowing for some end-user caching by preventing the URL from changing on every request
+	reCAPTCHA text specifies that v2 keys must be used
+
+For Developers
+
+	New html_purifier_config_setup filter (#857, contributed by @luku)
+	New image_tag_attributes filter (#871)
+	New files_for_item filter
+	New option filesForItem passed through to file_markup helper to indicate when files are being rendered as part of a call to files_for_item
+	New file_markup_options filter for modifying the options passed to file_markup
+	New file_markup_files filter for modifying the list of files to be rendered by file_markup
+	
+Bundled Add-ons
+
+	Thanks, Roy 2.5.1 (fixed visual spacing issues with featured blocks on homepage)
+	Exhibit Builder 3.4.2 (updated translations)
+	Simple Pages 3.1.2 (updated translations)
+	
+Internationalization
+
+	Updated translations for Bengali, Catalan, Czech, Danish, Esperanto, Spanish, Estonian, French, Galician, Hebrew, Hungarian, Indonesian, Italian, Japanese, Lithuanian, Portuguese (Brazil), Slovak, Serbian, Turkish, Ukrainian
+
+
+Release Notes for 2.6.1
+---------------------------
+Security Fixes
+
+    Added CSRF protection to users/api-keys (#842, reported by @JosiahPierce)
+    Fixed XSS issues with adding and editing tags (reported by Zekvan Arslan of Netsparker)
+
+Bug Fixes
+
+    Fixed bottom direct pagination input on admin items browse
+    "Encountered an error" pages now correctly report an HTTP error status code
+    Minor appearance fix to new TinyMCE toolbar
+
+Changes
+
+    Switched Javascript used for in-place editing on tag browse, users may notice slightly different apperance/behavior
+
+Bundled Plugins
+
+    Exhibit Builder 3.4.1 (fixes a bug preventing source code editing for captions)
+    Simple Pages 3.1.1 (restores several removed HTML editing options from versions prior to 3.1)
+
+Bundled Themes
+
+    Seasons 2.5.1 (fixes a bug in SASS usage, issues with margins and pagination)

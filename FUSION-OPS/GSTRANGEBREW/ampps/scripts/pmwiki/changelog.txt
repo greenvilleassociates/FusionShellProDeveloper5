@@ -1,0 +1,37 @@
+Version 2.2.143 (2021-10-02)
+
+    Prevent PHP from crashing with older markups and patterns.
+    Add ObsoleteMarkup(). Obsolete markup rules are now disabled and will appear framed with a "warning" icon.
+    Update documentation. 
+
+Version 2.2.142 (2021-08-31) 
+
+    Mute some PHP notices.
+    Add form attributes autofocus, accept.
+    Update documentation. 
+
+Version 2.2.141 (2021-07-09) ↑
+
+    Add $MultiFactorAuthFunction.
+    Add $PageIndexFoldFunction.
+    Update documentation 
+	
+Version 2.2.140 (2021-06-26) ↑
+
+    Fix warnings for undefined variables in PHP 8 (PITS:01461).
+    Update pub/drt-utils.js to use the new API function call for Highlight.js, the old one having been deprecated. This change requires Highlight.js version 10.7.0 or newer (currently 11.0.0).
+    Update documentation. 
+	
+Version 2.2.139 (2021-05-05) ↑
+
+    Remove empty title attributes, reported by Martin Cuno.
+    Hide warning in pagelist.php for PHP 8, reported by Dominique Faure.
+    Hide warning in wikiwords.php for PHP 8, reported by Jue (PITS:01461).
+    Update documentation. 
+
+Version 2.2.138 (2021-03-02) ↑
+
+    Fix details summary incorrectly escaped HTML, reported by Jack Applin (PITS:01465).
+    Update documentation. 
+
+	

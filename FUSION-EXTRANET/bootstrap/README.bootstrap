@@ -1,0 +1,6 @@
+This is a bootstrap program we used to replace index.html in the root directory.
+The program identifies the current size of the window with the defaul being the base code and executes it.
+If the system has 1400 or higher pixels, it increases the size of the working desktop.
+On an Imac Pro the Desktop Resolution is above 2400 px so the change makes a fairly significant difference.
+Framebase.html is the main program and loads at full size of the desktop... but it doesnt do a great job on mobile devices
+which vary too much in their capabilities. As such we load a side window to control the actual desktop.

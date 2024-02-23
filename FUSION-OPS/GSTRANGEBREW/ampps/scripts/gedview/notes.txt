@@ -1,0 +1,2 @@
+1) Add lang_settings.php and lang_settings.php.old to zip from "index" folder of manual installation
+2) Version 4.3.0 is stable release but SVN is written in includes/session.php refer http://wiki.phpgedview.net/en/index.php/PhpGedView_v4.3

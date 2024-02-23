@@ -1,0 +1,11 @@
+1. Keep root writable while installing manually.
+2. TAKE SQL DUMP WHEN INSTALLATION COMPLETES AND FILE DUMP ON ADMIN PANEL
+3. PHP REQUIREMENT LINK: https://qloapps.com/install-qloapps/#section-8
+4. If it is asked for country choose "United States" and Shop timezone as "US/Eastern"
+5. check and 
+	copy config/xml/*
+	copy img/*
+	copy mails/en/*
+	copy modules/*	co
+	copy translations/*
+	copy cache/sandbox/16us.xml	from manual installation

@@ -1,0 +1,4 @@
+size=838064
+path=/usr/sbin/httpd
+modules=core/2.434 prefork/2.434 mod_authn_file/2.434 mod_authz_host/2.434 mod_authz_groupfile/2.434 mod_auth_basic/2.434 mod_mime/2.434 mod_log_config/2.434 mod_env/2.434 mod_setenvif/2.434 mod_status/2.434 mod_autoindex/2.434 mod_negotiation/2.434 mod_dir/2.434 mod_alias/2.434
+webmin=1.981

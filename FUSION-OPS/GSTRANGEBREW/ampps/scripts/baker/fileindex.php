@@ -1,0 +1,17 @@
+DOCU
+account
+admin
+framework
+include
+index.php
+install
+languages
+modules
+search
+templates
+vendor
+config.php
+media
+pages
+temp
+var

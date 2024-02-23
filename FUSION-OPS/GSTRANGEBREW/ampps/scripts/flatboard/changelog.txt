@@ -1,0 +1,8 @@
+Changelog v3.0.1 - Release date: 2021-07-24
+* 💢 #12 Unpacker redirects to 404 page
+* 💢 Small others fix.
+
+Changelog v3.0 - Release date: 2021-07-03
+* 💢 PHP 8 support.
+* 💢 template fix on forum.tpl.php.
+* 💢 Minor fix.

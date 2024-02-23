@@ -1,0 +1,2 @@
+1. PHP REQUIREMENT LINK : https://freshrss.org/#requirements
+2. We created blank "applied_migrations.txt" file because install redirect's to installation if not created.

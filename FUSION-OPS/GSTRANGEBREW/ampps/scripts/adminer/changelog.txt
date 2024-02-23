@@ -1,0 +1,64 @@
+Adminer 4.8.1 (released 2021-05-14):
+Internet Explorer or PDO in Adminer 4.7.8-4.8.0: Fix XSS in doc_link (bug #797)
+Fix more PHP 8 warnings (bug #781)
+Avoid PHP warnings with PDO drivers (bug #786, regression from 4.7.8)
+MySQL: Allow moving views to other DB and renaming DB with views (bug #783)
+MariaDB: Do not treat sequences as views (PR #416)
+PostgreSQL: Support UPDATE OF triggers (bug #789)
+PostgreSQL: Support triggers with more events (OR)
+PostgreSQL: Fix parsing of foreign keys with non-ASCII column names
+PostgreSQL < 10 PDO: Avoid displaying GENERATED ALWAYS BY IDENTITY everywhere (bug #785, regression from 4.7.9)
+SQLite: Fix displayed types (bug #784, regression from 4.8.0)
+
+Adminer 4.8.0 (released 2021-02-10):
+Support function default values in insert (bug #713)
+Allow SQL pseudo-function in insert
+Skip date columns for non-date values in search anywhere
+Add DB version to comment in export
+Support PHP 8 in create table (regression from 4.7.9)
+MySQL 8: Fix EXPLAIN in SQL command
+PostgreSQL: Create PRIMARY KEY for auto increment columns
+PostgreSQL: Avoid exporting empty sequence last value (bug #768)
+PostgreSQL: Do not show triggers from other schemas (PR #412)
+PostgreSQL: Fix multi-parameter functions in default values (bug #736)
+PostgreSQL: Fix displaying NULL bytea fields
+PostgreSQL PDO: Do not select NULL function for false values in edit
+Oracle: Alter indexes
+Oracle: Count tables
+Oracle: Import from CSV
+Oracle: Fix column size with string type
+MongoDB: Handle errors
+SimpleDB, Firebird, ClickHouse: Move to plugin
+
+Adminer 4.7.9 (released 2021-02-07):
+Fix XSS in browsers which don't encode URL parameters (bug #775, regression from 4.7.0)
+Elasticsearch, ClickHouse: Do not print response if HTTP code is not 200
+Don't syntax highlight during IME composition (bug #747)
+Quote values with leading and trailing zeroes in CSV export (bug #777)
+Link URLs in SQL command (PR #411)
+Fix displayed foreign key columns from other DB (bug #766)
+Re-enable PHP warnings (regression from 4.7.8)
+MySQL: Do not export names in quotes with sql_mode='ANSI_QUOTES' (bug #749)
+MySQL: Avoid error in PHP 8 when connecting to socket (PR #409)
+MySQL: Don't quote default value of text fields (bug #779)
+PostgreSQL: Export all FKs after all CREATE TABLE (PR #351)
+PostgreSQL: Fix dollar-quoted syntax highlighting (bug #738)
+PostgreSQL: Do not show view definition from other schema (PR #392)
+PostgreSQL: Use bigserial for bigint auto increment (bug #765, regression from 3.0.0)
+PostgreSQL PDO: Support PgBouncer, unsupport PostgreSQL < 9.1 (bug #771)
+PostgreSQL 10: Support GENERATED ALWAYS BY IDENTITY (PR #386)
+PostgreSQL 10: Support partitioned tables (PR #396)
+PostgreSQL 11: Create PRIMARY KEY for auto increment columns
+SQLite: Set busy_timeout to 500
+MS SQL: Don't truncate comments to 30 chars (PR #376)
+Elasticsearch 6: Fix displaying type mapping (PR #402)
+MongoDB: Fix password-less check in the mongo extension (PR #405)
+Editor: Cast to string when searching (bug #325)
+Editor: Avoid trailing dot in export filename
+
+Adminer 4.7.8 (released 2020-12-06):
+Support PHP 8
+Disallow connecting to privileged ports (bug #769)
+
+Adminer 4.7.7 (released 2020-05-11):
+Fix open redirect if Adminer is accessible at //adminer.php%2F@

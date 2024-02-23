@@ -1,0 +1,66 @@
+<softinstall xmlns="http://www.softaculous.com">
+	<settings>
+		<group>
+			<heading>{{site_set}}</heading>
+			<input type="text" name="site_name" size="30" value="Framadate">
+				<head>{{site_name}}</head>
+			</input>
+		</group>
+		<group>
+			<heading>{{db_set}}</heading>
+			<input type="text" name="dbprefix" size="30" value="fd_">
+				<head>{{db_pre}}</head>
+				<optional>true</optional>
+			</input>
+		</group>
+		<group>
+			<heading>{{ad_act}}</heading>
+			<input type="text" name="admin_username" size="30" value="admin">
+				<head>{{ad_name}}</head>
+			</input>
+			<input type="text" name="admin_pass" size="30" value="pass">
+				<head>{{ad_pass}}</head>
+				<handle>__ad_pass</handle>
+			</input>
+			<input type="text" name="admin_email" size="30" value="admin" softmail="true">
+				<head>{{ad_email}}</head>
+				<handle>__email_address</handle>
+			</input>
+		</group>
+		<group>
+			<heading>{{smtp}}</heading>
+			<input type="checkbox" name="use_smtp" value="Off">
+				<head>{{use_smtp}}</head>
+				<exp>{{exp_use_smtp}}</exp>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="smtp" size="30" value="smtp.site.com">
+				<head>{{smtp_ser}}</head>
+				<exp>{{exp_imap_ser}}</exp>
+				<optional>true</optional>
+			</input>
+			<input type="select">
+				<select name="smtp_conn_prefix" >
+					<option value="ssl">SSL</option>
+					<option value="tls">TLS</option>
+					<option value="false">None</option>
+				</select>
+				<head>{{conn_type}}</head>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="smtp_port" size="30" value="25">
+				<head>{{smtp_port}}</head>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="smtp_username" size="30" value="smtpuser">
+				<head>{{smtp_username}}</head>
+				<optional>true</optional>
+			</input>
+			<input type="text" name="smtp_password" size="30" value="smtppass">
+				<head>{{smtp_password}}</head>
+				<optional>true</optional>
+			</input>
+		</group>
+	</settings>
+	<db>mysql</db>
+</softinstall>

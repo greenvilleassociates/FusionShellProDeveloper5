@@ -1,0 +1,117 @@
+ [-] LiteCart 2.3.0
+Download
+
++ Category Picker
++ Min, Max, and Step quantity
++ Support for defining cities in geo zones and checking them
++ Only allow HTTP Post data from own domain
++ Add ability to edit CSS variables from admin
++ Let user select list style for draw_listing_product()
++ Add support for Material Design Icons
++ Add rlink() for static content files (appends a timestamp to the url for last modified)
++ Template stylesheets now using CSS Variables
++ CSV import rewritten for resuming large files
+* Cook meta description conditionally in lib_document
+* Separate newletter recipients from customers
+* Migrate array() to [] as of PHP 5.4
+* Expand viewport from 1280px to 1440px
+* Set base font 16px for all media devices (recommended web standard)
+* Improved RTL compatibility
+* Make sure pages belong to dock before showing them
+* Fix widget headings
+* Fix copy options when cloning product
+* Connect guest orders to accounts
+* Upgrade jQuery to 3.6.0
+- Remove deprecated fonticons fa
+- Remove memory limit when processing CSV
+- Deprecate database table definitions and rely on DB_TABLE_PREFIX only
+- Remove Cloudflare compatibility code (better used as vqmod)
+- Don't match by name when importing CSV (too many false positives)
+
+And some minor adjustments, code optimizations and improvements.
+
+[-] LiteCart 2.2.12
+Download
+
++ Instructions how to make a git pull request
+* Update to Trumbowyg 2.25.1 and fix problem with displaying tables
+* Fix code regex during search for products
+* Fix translations needing html entities
+* Fix featherlight error when closing modals
+* Fix issue where item price adjust was added twice durring edit order
+* Replace hardcoded basename for self using CLI
+* Fix disabled field "domain" in edit language
+* Ensure numerical values are passed in javascript
+- Remove some polyfills that might do more harm than good
+- Remove defined language in Developer Kit URL
+
+And some minor adjustments.
+
+[-] LiteCart 2.2.11
+Download
+
+! Fix tax not calculated correctly when not a campaign
++ Product filter bar
+* Fix missing definition for image ratio on category page
+* Fix allow any decimals and step for currency input field
+* Simplify some code
+* Replace sample comments in .editorconfig with some useful information
+* Fix item price adjust added twice during edit order
+* Fix faulty MySQL table name while saving product
+- Remove orphan table from database cleanup
+
+[-] LiteCart 2.2.10
+Download
+
++ Add .editoronfig
++ Option to save customer details to account during checkout
++ Add fallback view for checkout without cart items
++ Add CSV import/export feature for attributes
++ Ability to load tax class and rate by code
++ Add total stock value to statistics
++ Add support for identifying a lowercase country in a browser locale
++ Add tax as retrievable reference property for product
+* Fix wrong variable name when deleting country
+* Fix A4R size in printable
+* Fix option validation in cart malfunctioning for required user input
+* Filter page and sort query parameters from hreflang
+* Filter optional options that are left out for cart item
+* Fix customer reference loading of properties
+* Fix translated settings group name
+* Fix week calendar format in graphs
+* Fix MySQL 8 issue not allowing to save product
+* Fix don't create account if missing email
+* Fix unset user permissions
+* Fix sort orders by columns
+* Featherlight optimizations (Yes, it can be smaller)
+* Consistently pass order object to module rather than object data
+* Don't reference manufacturer for product if manufacturer is disabled
+* Installer workaround for MySQL
+* Set aspect-ratio for images
+Released Jul 8 2021
+
+LiteCart 2.2.9
+Download
+
++ Add support for Bootstrap Icons
++ Emulate some server variables if CLI
++ Add frontend link to category
++ Add support for importing exporting campaigns in CSV
++ Add workaround for allow_url_fopen is disabled when importing images from remote locations
+* Fix issue #264 - Wrong table definition
+* Fix permissions checkboxes
+* Fix checking log_errors state
+* Fix column converting for some date columns
+* Fix identify language by domain
+* Fix decimal quantity
+* Fix PHP 8 deprecated notice
+* Remove star marking in graphs as vqmod messes up UTF-8 for json_encode()
+* Security enhancements
+* Swap geo IP provider from Geo IP Tool to IP-API for better accuracy
+* vQmod test tool rewritten for better acuracy
+* Use permalink with public key for success page
+* Also match manufacturer and supplier name during search
+* Minor adjustments and improvements
+* Use absolute matching of language domain rather than ending
+* Remove -s-0 from customer service URL and support variations by language
+* Optimize CSV Import/Export pages

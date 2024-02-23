@@ -1,0 +1,4 @@
+#!/bin/sh
+echo Reloading Webmin server in /opt/webmin/webmin-1.981
+pidfile=`grep "^pidfile=" /gweb/webmin/miniserv.conf | sed -e 's/pidfile=//g'`
+kill -USR1 `cat $pidfile`

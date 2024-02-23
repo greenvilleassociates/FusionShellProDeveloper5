@@ -1,0 +1,122 @@
+#DO NOT EDIT, CREATED BY AMPPS
+
+#### Localhost VirtualHost ####
+
+
+
+<VirtualHost *:80>
+<Directory "/Applications/Ampps/www">
+	Options FollowSymLinks Indexes
+	AllowOverride All
+	Order deny,allow
+	allow from All
+</Directory>
+ServerName localhost
+ServerAlias localhost 127.0.0.1
+ScriptAlias /cgi-bin/ "/Applications/Ampps/www/cgi-bin/"
+DocumentRoot "/Applications/Ampps/www"
+ErrorLog "/Applications/Ampps/apache/logs/error.err"
+CustomLog "/Applications/Ampps/apache/logs/access.log" combined
+</VirtualHost>
+
+###############################
+			
+#### capitoltechnology.us VirtualHost ####
+			
+
+<VirtualHost *:80>
+<Directory "/Applications/Ampps/www/capitoltechnology.us">
+Options FollowSymLinks Indexes
+AllowOverride All
+Order deny,allow
+allow from All
+</Directory>
+ServerName capitoltechnology.us
+ServerAlias capitoltechnology.us www.capitoltechnology.us
+ScriptAlias /cgi-bin/ "/Applications/Ampps/www/capitoltechnology.us/cgi-bin/"
+DocumentRoot "/Applications/Ampps/www/capitoltechnology.us"
+ErrorLog "/Applications/Ampps/apache/logs/capitoltechnology.us.err"
+CustomLog "/Applications/Ampps/apache/logs/capitoltechnology.us.log" combined
+</VirtualHost>
+
+####################################
+			
+#### capitoltechnology.uk VirtualHost ####
+			
+
+<VirtualHost *:80>
+<Directory "/Applications/Ampps/www/capitoltechnology.uk">
+Options FollowSymLinks Indexes
+AllowOverride All
+Order deny,allow
+allow from All
+</Directory>
+ServerName capitoltechnology.uk
+ServerAlias capitoltechnology.uk www.capitoltechnology.uk
+ScriptAlias /cgi-bin/ "/Applications/Ampps/www/capitoltechnology.uk/cgi-bin/"
+DocumentRoot "/Applications/Ampps/www/capitoltechnology.uk"
+ErrorLog "/Applications/Ampps/apache/logs/capitoltechnology.uk.err"
+CustomLog "/Applications/Ampps/apache/logs/capitoltechnology.uk.log" combined
+</VirtualHost>
+
+####################################
+			
+#### capitoltechnology.info VirtualHost ####
+			
+
+<VirtualHost *:80>
+<Directory "/Applications/Ampps/www/capitoltechnology.info">
+Options FollowSymLinks Indexes
+AllowOverride All
+Order deny,allow
+allow from All
+</Directory>
+ServerName capitoltechnology.info
+ServerAlias capitoltechnology.info www.capitoltechnology.info
+ScriptAlias /cgi-bin/ "/Applications/Ampps/www/capitoltechnology.info/cgi-bin/"
+DocumentRoot "/Applications/Ampps/www/capitoltechnology.info"
+ErrorLog "/Applications/Ampps/apache/logs/capitoltechnology.info.err"
+CustomLog "/Applications/Ampps/apache/logs/capitoltechnology.info.log" combined
+</VirtualHost>
+
+####################################
+			
+#### proxone.us VirtualHost ####
+			
+
+<VirtualHost *:80>
+<Directory "/Applications/Ampps/www/proxone.us">
+Options FollowSymLinks Indexes
+AllowOverride All
+Order deny,allow
+allow from All
+</Directory>
+ServerName proxone.us
+ServerAlias proxone.us www.proxone.us
+ScriptAlias /cgi-bin/ "/Applications/Ampps/www/proxone.us/cgi-bin/"
+DocumentRoot "/Applications/Ampps/www/proxone.us"
+ErrorLog "/Applications/Ampps/apache/logs/proxone.us.err"
+CustomLog "/Applications/Ampps/apache/logs/proxone.us.log" combined
+</VirtualHost>
+
+####################################
+			
+#### pacerlink.info VirtualHost ####
+			
+
+<VirtualHost *:80>
+<Directory "/Applications/Ampps/www/pacerlink.info">
+Options FollowSymLinks Indexes
+AllowOverride All
+Order deny,allow
+allow from All
+</Directory>
+ServerName pacerlink.info
+ServerAlias pacerlink.info www.pacerlink.info
+ScriptAlias /cgi-bin/ "/Applications/Ampps/www/pacerlink.info/cgi-bin/"
+DocumentRoot "/Applications/Ampps/www/pacerlink.info"
+ErrorLog "/Applications/Ampps/apache/logs/pacerlink.info.err"
+CustomLog "/Applications/Ampps/apache/logs/pacerlink.info.log" combined
+</VirtualHost>
+
+####################################

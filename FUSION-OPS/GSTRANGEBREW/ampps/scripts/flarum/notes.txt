@@ -1,0 +1,8 @@
+1. PHP REQUIREMENT LINK : https://docs.flarum.org/install.html#server-requirements
+2. Use composer install and make zip of the package i.e :
+php composer.phar create-project flarum/flarum /PATH/flarum100
+3. Remove sql insert from `[[dbprefix]]access_tokens` and adjust AUTO_INCREMENT.
+4. Kept version as 1.0.4 in info.xml as it shows 1.0.4 in admin panel dashboard, in `[[dbprefix]]settings` table and in /vendor/flarum/core/src/Foundation/Application.php (though composer install shows Installing flarum/flarum (v1.0.0))
+5. Copy public/assets/fonts folder from manual to zip as it is not generated after install. The 'fonts' folder can be checked via downloading this zip https://codeload.github.com/components/font-awesome/zip/refs/heads/master Check diff only with the /webfonts/ folder to verify whether structure is correct.
+6. Check for symlinks in every version.
+7. We have used .htaccess to redirect to /public folder.

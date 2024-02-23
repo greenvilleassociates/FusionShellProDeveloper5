@@ -1,0 +1,17 @@
+.gitignore
+.htaccess
+README.md
+app
+config.app.example.php
+favicon-16x16.png
+favicon-196x196.png
+favicon.ico
+index.htm
+index.html
+index.php
+install
+license.txt
+temp
+uploads
+web.config
+config.app.php

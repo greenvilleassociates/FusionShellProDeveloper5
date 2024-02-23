@@ -1,0 +1,12 @@
+This directory includes the three installer programs.
+
+Ampps includes the following:
+1) Apache Web Server for Any Platform (Mac, Linux, Windows).
+2) PHP Stack Latest (8.X)
+3) VHost Architecture
+4) MySql 5.5 DBMS Architecture in a single directory architecture(IE You can in fact use, and back it up in tact).
+6) Host Control Architecture - Service Manager
+7) Softalicious Software Delivery Architecture
+
+Alternatively XAMPP includes all of these items plus an FTP Server, and Email Platform. 
+XAMPP was designed to deliver applications as was AMPP.

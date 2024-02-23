@@ -1,0 +1,40 @@
+
+[13-Oct-2021 21:19:09] FATAL : 1 Uncaught ArgumentCountError: Too few arguments to function POST(), 1 passed in /Applications/Ampps/ampps/softaculous/includes71/main/ampps/editini.php on line 67 and exactly 2 expected in /Applications/Ampps/ampps/softaculous/includes71/main/functions.php:1755
+Stack trace:
+#0 /Applications/Ampps/ampps/softaculous/includes71/main/ampps/editini.php(67): POST('asp')
+#1 /Applications/Ampps/ampps/softaculous/includes71/enduser.php(843): editini()
+#2 /Applications/Ampps/ampps/softaculous/enduser/inc.php(24): include_once('/Applications/A...')
+#3 /Applications/AMPPS/ampps/softaculous/enduser/index.php(25): include_once('/Applications/A...')
+#4 {main}
+  thrown /Applications/Ampps/ampps/softaculous/includes71/main/functions.php 1755
+
+
+[13-Oct-2021 21:19:18] FATAL : 1 Uncaught ArgumentCountError: Too few arguments to function POST(), 1 passed in /Applications/Ampps/ampps/softaculous/includes71/main/ampps/editini.php on line 67 and exactly 2 expected in /Applications/Ampps/ampps/softaculous/includes71/main/functions.php:1755
+Stack trace:
+#0 /Applications/Ampps/ampps/softaculous/includes71/main/ampps/editini.php(67): POST('asp')
+#1 /Applications/Ampps/ampps/softaculous/includes71/enduser.php(843): editini()
+#2 /Applications/Ampps/ampps/softaculous/enduser/inc.php(24): include_once('/Applications/A...')
+#3 /Applications/AMPPS/ampps/softaculous/enduser/index.php(25): include_once('/Applications/A...')
+#4 {main}
+  thrown /Applications/Ampps/ampps/softaculous/includes71/main/functions.php 1755
+
+
+[13-Oct-2021 21:19:27] FATAL : 1 Uncaught ArgumentCountError: Too few arguments to function POST(), 1 passed in /Applications/Ampps/ampps/softaculous/includes71/main/ampps/editini.php on line 67 and exactly 2 expected in /Applications/Ampps/ampps/softaculous/includes71/main/functions.php:1755
+Stack trace:
+#0 /Applications/Ampps/ampps/softaculous/includes71/main/ampps/editini.php(67): POST('asp')
+#1 /Applications/Ampps/ampps/softaculous/includes71/enduser.php(843): editini()
+#2 /Applications/Ampps/ampps/softaculous/enduser/inc.php(24): include_once('/Applications/A...')
+#3 /Applications/AMPPS/ampps/softaculous/enduser/index.php(25): include_once('/Applications/A...')
+#4 {main}
+  thrown /Applications/Ampps/ampps/softaculous/includes71/main/functions.php 1755
+
+
+[13-Oct-2021 21:19:51] FATAL : 1 Uncaught ArgumentCountError: Too few arguments to function POST(), 1 passed in /Applications/Ampps/ampps/softaculous/includes71/main/ampps/editini.php on line 67 and exactly 2 expected in /Applications/Ampps/ampps/softaculous/includes71/main/functions.php:1755
+Stack trace:
+#0 /Applications/Ampps/ampps/softaculous/includes71/main/ampps/editini.php(67): POST('asp')
+#1 /Applications/Ampps/ampps/softaculous/includes71/enduser.php(843): editini()
+#2 /Applications/Ampps/ampps/softaculous/enduser/inc.php(24): include_once('/Applications/A...')
+#3 /Applications/AMPPS/ampps/softaculous/enduser/index.php(25): include_once('/Applications/A...')
+#4 {main}
+  thrown /Applications/Ampps/ampps/softaculous/includes71/main/functions.php 1755
+

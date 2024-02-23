@@ -1,0 +1,23 @@
+1. Set the debug to false in .env
+2. Set the APP_ENV to production in .env
+3. /public should be there in APP_URL in .env
+4. Remove .git directory from original zip and then make a package. (Confirmed with vendor)
+5. Select Email Settings Driver as "SMTP" in manual installation.
+6. Fill following details in SMTP settings.
+
+From Address = Email address
+Username = Email address
+Encryption = SSL/TLS
+Host = smtp.gmail.com
+Port = 465
+
+7. Add the following line to the .htaccess file in the root folder :
+<IfModule mod_alias.c>
+RedirectMatch 301 ^[[relativeurl]]/$ [[softurl]]/public/index.php
+</IfModule>
+8. PHP REQUIREMENT LINK : https://invoiceninja.github.io/docs/self-host-installation/
+9. Release date : https://github.com/invoiceninja/invoiceninja/releases
+10. We exclude logo image path while upgrade i.e public/images/invoiceninja-logo.png since user's custom logo was getting overwritten post upgrade. (Check when we add upgrade)
+11. Explicitly add DISABLE_AUTO_UPDATE=true in .env and keep the value true i.e 'disable_auto_update' => true in bootstrap/cache/config.php.
+(Confirmed with vendor via email)
+12. Keep UPDATE_SECRET value in all installation through Softaculous as it is required for upgrade.

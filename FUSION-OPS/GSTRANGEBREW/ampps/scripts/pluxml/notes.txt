@@ -1,0 +1,2 @@
+1) PHP REQUIREMENT LINK : https://wiki.pluxml.org/installer/installation/
+(check php requirement from core/composer.lock)

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" method="upgrade">
+	<name>Nederlands (nl-BE) taalpakket</name>
+	<packagename>nl-BE</packagename>
+	<version>4.0.2.1</version>
+	<creationDate>Augustus 2021</creationDate>
+	<author>Dutch (BE) translation team</author>
+	<authorEmail>frank.joris@skynet.be</authorEmail>
+	<authorUrl>http://community.joomla.org/translations/joomla-4-translations.html#nl-be</authorUrl>
+	<copyright>Copyright (C) 2005 - 2021 Open Source Matters, Inc. Alle rechten voorbehouden.</copyright>
+	<license>https://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<url>https://github.com/joomla/joomla-cms</url>
+	<packager>Dutch (BE) translation team</packager>
+	<packagerurl></packagerurl>
+	<description><![CDATA[Vlaams taalpakket]]></description>
+	<blockChildUninstall>true</blockChildUninstall>
+	<files>
+		<folder type="language" client="site" id="nl-BE">language/nl-BE</folder>
+		<folder type="language" client="administrator" id="nl-BE">administrator/language/nl-BE</folder>
+		<folder type="language" client="api" id="nl-BE">api/language/nl-BE</folder>
+	</files>
+	<updateservers>
+		<server type="collection" priority="1" name="Geaccrediteerde Joomla! vertalingen">
+			https://update.joomla.org/language/translationlist_4.xml
+		</server>
+	</updateservers>
+</extension>

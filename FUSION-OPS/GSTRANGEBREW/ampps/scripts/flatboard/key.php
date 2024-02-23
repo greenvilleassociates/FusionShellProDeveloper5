@@ -1,0 +1,1 @@
+<?php define('KEY', '[[admin_pass]]'); ?>

@@ -1,0 +1,65 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/QloApps
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/ecommerce/QloApps
+	</ratings>
+	<space>
+		79200811
+	</space>
+	<support>
+		https://forums.qloapps.com/
+	</support>
+	<version>
+		1.5.1.0
+	</version>
+	<mod>1</mod>
+	<release_date>31-03-2021</release_date>
+	<admin>admin123</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="5.4.0" />
+	<requirement check="php" type="version" operator="lt" value="7.0.0" />
+	<requirement check="mysql" type="version" operator="lt" value="5.7.0" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="SimpleXML" />
+	<requirement check="php" type="extension" name="soap" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">QloApps </font> is Hotel &amp; Booking Reservation Ecommerce system on Prestashop. QloApps is an Open-source and Free. With the help of QloApps, you can launch your hotel booking website without any cost and take &amp; manage online bookings . You can manage your online &amp; On-Desk booking easily with QloApps.
+		<br /><br />
+		QloApps is a truly opensource Hotel-Commerce platform which is under the <a href="https://github.com/webkul/hotelcommerce/blob/develop/LICENSE" target="_blank">Open Software License 3.0</a>
+		</english-overview>		
+		<english-features>
+			<h4>Launch Hotel Booking Website</h4>
+			<ul>Launching a very simple, exquisite and user-friendly booking system</ul>
+			<h4>Tax Management</h4>
+			<ul>QloApps has the Tax Management features that allow you to manage all the city</ul>
+			<h4>Partial Payment Booking</h4>
+			<ul>With the help of QloApps Hotel Reservation System, the customers can book hotel rooms</ul>
+			<h4>Integrated Payment Gateway</h4>
+			<ul>QloApps supports all the payment gateways. We provide Paypal payment gateway integrated by default</ul>
+			<h4>Multiple Languages and Currencies</h4>
+			<ul>QloApps supports multiple languages and currencies. Now, you can attract customers from your country</ul>
+			<h4>Instant Email Notification</h4>
+			<ul>While making payment online to book rooms the most important thing a customer need</ul>
+			<h4>Manage Offline Booking</h4>
+			<ul>Manage offline booking very efficiently with the help of QloApps. QloApps online booking system</ul>
+			<h4>Search Engine Optimization</h4>
+			<ul>Search engine optimization increases the visibility of your hotel booking site in the search</ul>
+		</english-features>
+		<english-ad_dir>Admin Folder</english-ad_dir>
+		<english-err_admin_folder>The Admin folder name cannot be "admin" !</english-err_admin_folder>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_email>Please provide the email to reset the password</english-err_no_email>
+		<english-err_no_such_email>The Admin email is incorrect and does not exist!</english-err_no_such_email>
+	</languages>
+</soft>

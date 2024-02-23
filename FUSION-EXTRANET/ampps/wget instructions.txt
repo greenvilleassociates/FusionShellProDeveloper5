@@ -1,0 +1,10 @@
+AMPPS Download Links
+
+Windows Link
+wget http://s2.softaculous.com/a/ampps/files/Ampps-3.9-x86_64-setup.exe
+
+Linux Link
+wget http://s2.softaculous.com/a/ampps/files/Ampps-3.8-x86_64.run
+
+MACOS X Link
+http://s2.softaculous.com/a/ampps/files/AMPPS-3.9-x86_64.dmg

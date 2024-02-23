@@ -1,0 +1,20 @@
+1. Choose license "Shopware Community Edition(license:AGPL)"
+2. Choose language "English" while manual installation. "Default shop currency:" as USD.
+3. Select Default currency: Dollar(US), Default country : United States from dropdown(Since Shopware 6.3.5.1)
+4. Move triggers in sql file below the constraints i.e at the end.
+5. Take sql dump when script logs in to Welcome page . Take file dumps after completing first run wizard.
+6. Always check and replace update.zip with latest.(We have disabled upgrade for Shopware 5.x to 6.x due to major structural changes, check later for 6.x to 6.x version)
+7. Shopware is not designed for a Windows systems, hence we have disabled on windows. (Confirmed with vendor via email)
+8. PHP REQUIREMENT LINK: https://docs.shopware.com/en/shopware-6-en/first-steps/system-requirements?category=shopware-6-en/getting-started
+9. Move triggers in sql file below the constraints i.e at the end.
+10. Don't convert sql to utf8.
+11. Remove inserts from table 'app_config' and 'refresh_token' as they are created post login.
+12. We have not changed "sales_access_key1" in `sales_channel` table in clone.php becuase there can be multiple sales channels which will create multiple keys.
+13. 'cache-id' in 'app_config' table is generated on accessing admin panel hence we have deleted it.
+14. If shopware manual install doesn't work with web UI try with CLI using following command.
+
+bin/console system:setup
+bin/console system:install --basic-setup
+bin/console user:create "[[admin_user]]"
+bin/console cache:clear
+https://docs.shopware.com/en/shopware-6-en/tutorials-and-faq/shopware-cli

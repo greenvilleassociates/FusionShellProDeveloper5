@@ -1,0 +1,15 @@
+1) Install using web installer zip from here : https://github.com/wintercms/web-installer/releases/latest/download/install.zip
+Step mentioned here : https://wintercms.com/docs/setup/installation#web-based-installation
+Installer is at /install.html 
+
+2) Make our zip from zip archive mentioned in the code in web installer folder i.e /install/install/api/src/Api.php
+i.e in constant const WINTER_ARCHIVE = 'https://github.com/wintercms/winter/archive/refs/heads/1.1.zip';
+
+3) Copy 'vendor' folder, 'composer.lock' file from manual installation folder to our zip. 
+
+4) Check development dependencies in every version in this file /install/api/src/Api.php i.e in 'postCleanUp()' function,
+i.e only the one's mentioned with comment //Remove core development files. Add those files to our <exclude> tag in install.xml.
+These dependencies are removed by the script. Also compare with manual installation zip with original zip downloaded from https://github.com/wintercms/winter/archive/refs/heads/1.1.zip to 
+check these changes and do them accordingly in our install.xml.
+
+5. PHP REQUIREMENT LINK : https://wintercms.com/docs/setup/installation#system-requirements . Also check in install/api/src/Api.php in MIN_PHP_VERSION its mentioned 7.2.9 so we have kept the same in info.xml.

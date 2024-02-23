@@ -1,0 +1,14 @@
+gs_lib=
+spool_dir=/var/spool/lpd
+iface_arg=
+show_jobs=0
+display_mode=0
+iface_perms=755
+show_status=0
+smbclient_path=smbclient
+gs_path=gs
+print_style=freebsd
+printcap_file=/etc/printcap
+sort_mode=0
+driver_style=webmin
+gs_fontpath=

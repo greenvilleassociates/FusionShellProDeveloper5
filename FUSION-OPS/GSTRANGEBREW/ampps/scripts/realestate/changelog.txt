@@ -1,0 +1,42 @@
+Version 1.35.1 (September 11, 2021): #
+
+    update Yii framework to version 1.1.24;
+    PHP 8.0 support.
+
+Version 1.35.0 (August 30, 2021): #
+
+    links to edit info pages under the administrator and moderator in the BASIS theme
+    sending an ad for moderation after changing data or uploading new photos, videos or documents
+    in the section "History of messages with the user" displaying information about the user and his contacts
+    in the section "Sitemap setup" link to the sitemap
+    buttons for sending a message to the user and viewing the ad on the ad editing page
+    update Yii framework to version 1.1.23
+
+
+Version 1.34.1 (April 4, 2021): #
+
+    minor bugfixes.
+
+
+Version 1.34.0 (January 12, 2021): #
+
+    SEO setting for the search form
+    setting Yandex XML (adding feeds in terms of criteria)
+    sitemap setting
+    "bad words" module (listings, comments, or reviews will not be posted if a word from the list of "bad words" is found in the text)
+    automatic saving of listings in the editing section
+    two-factor authorization to the admin panel by e-mail
+    PHP 7.4 support
+    minor bugfixes.
+
+Version 1.33.0 (July 14, 2020): #
+
+    settings for the Best listings widget (for Basis and Dolphin themes);
+    the capability to download images appeared for "Information Pages" in Popular Destinations widget (for Basis and Dolphin themes);
+    on the video tab, it's enough to specify the youtube URL for video addition;
+    setting "Convert Youtube URL to Video". When you turn it on, all Youtube Url in the object's description, materials, info pages changed to a video player;
+    the capability to add API key in the website settings for currency conversion using currencyconverterapi.com service (for paid Basic / PRO / Ultimate versions);
+    module "Tariff plans" - limitation of adding objects for tariff plans "Free";
+    module "Tariff plans" - different tariff plans for different types of users;
+    in the list of users displaying only those who have objects.;
+    multiple improvements and speedwork increase.: https://monoray.net/forum/viewtopic.php?f=3&t=1447

@@ -1,0 +1,50 @@
+## Version 4.1.2 - Aug 28, 2021
+
+BUG: Issue #706 - TOutputcache: don't serialize controls state (jcass77, ctrlaltca)
+BUG: Issue #715 - Problem saving files on TActiveFileUpload when Multiple=true (ctrlaltca)
+BUG: Issue #718 - Fix clientside exception logging in debug mode (jmartens, ctrlaltca)
+BUG: Issue #722 - Problem with TactiveButton Text property (ctrlaltca)
+BUG: Issue #720 - TSecurityManager: use correct private property (qysp)
+BUG: Fix bug in TStyleDiff that didn't render CssClass and Style correctly on callback (ctrlaltca)
+BUG: Issue #727 - Php compatibility bug in TMysqlMetaData.php (PixelHomie)
+ENH: Issue #724 - Ajax queue improvement (ganiuszka)
+ENH: Add support for SameSite property on cookies (ctrlaltca)
+
+## Version 4.1.1 - Mar 27, 2020
+
+BUG: TActiveFileUpload: avoid warning in browser console by removing usage of an empty page as initial content (ctrlaltca)
+BUG: TExpression: fix naming conflict of class variable (ctrlaltca)
+BUG TActiveRecordConfig: fixed bug in default manager class (LCSKJ)
+ENH: Added compatibility with Php 7.4 (ctrlaltca)
+ENH: issue #708 Add support for PostgreSQL 12 (ganiuszka)
+CHG: Deprecated / ported method using attributes obsoleted in html5 (ctrlalta)
+
+## Version 4.1.0 - Nov 18, 2019
+
+BUG: Issue #694 - Undefined variable: conn notice in Active Record Scaffold (ganiuszka)
+BUG: Issue #696 - SQL error when trying to disable PDO::ATTR_EMULATE_PREPARES option for MySQL (ganiuszka)
+BUG: Issue #698 - TActiveFileUpload - multi upload always shows a red X for incomplete upload (ctrlaltca)
+ENH: Added ClientSide.RetryLimit to retry timeout out ajax requests (ctrlaltca)
+
+Version 4.0.2 - Apr 12, 2019
+
+BUG: Issue #669 - Wrong Gettext class filename (gani)
+BUG: Issue #671 - THtmlArea4 in TActiveRepeater (ctrlaltca)
+BUG: Issue #674 - Fix TValidationSummary when no validator has an ErrorMessage set and js is disabled (ctrlaltca)
+BUG: Issue #675 - TDatePicker position problems with jQuery 3.3 (ctrlaltca)
+BUG: Issue #683 - TRequiredFieldValidator doesn't work with TActiveListBox (gani, ctrlaltca)
+BUG: Issue #533 - Mitigate CVE-2011-4718 by regenerating the session id when TAuthManager swiches user (david0)
+BUG: Issue #439 - Remove internal I18n data; use php's intl instead (ctrlaltca)
+ENH: Added support for igbinary serializator (ctrlaltca)
+ENH: Added TGlobalizationAutoDetect::AvailableLanguages property to set the list of available cultures on the website (ctrlaltca)
+ENH: Make TableColumnClass in TMysqlMetaData variable (LCSKJ)
+
+## Version 4.0.1 - Apr 1, 2018
+
+CHG: Removed all deprecated code (ctrlaltca) CHG: Removed deprecated components based on the prototype jajascript library (ctrlaltca) 
+CHG: Removed bundled copy of JSMin-php library, get it from composer instead (ctrlaltca) 
+ENH: Added composer script commands to run phpunit and apigen (ctrlaltca) 
+BUG: Issue #660 - Wsat redirect broken (ctrlaltca) 
+ENH: Added html5 charset attribute to meta (frkinta) 
+BUG: Issue #662 - External links to API manual doesn't work anymore (frkinta) 
+BUG: Issue #663 - PHP 7.2 warning messages break active controls (ctrlaltca)

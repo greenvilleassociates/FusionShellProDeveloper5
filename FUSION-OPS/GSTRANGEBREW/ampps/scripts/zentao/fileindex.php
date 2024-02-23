@@ -1,0 +1,14 @@
+VERSION
+api
+bin
+config
+db
+doc
+framework
+index.html
+lib
+module
+sdk
+tmp
+www
+index.php

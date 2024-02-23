@@ -1,0 +1,119 @@
+SeoToaster v3.4.0 New Features
+
+E-commerce:
+
+    Added support for the negative stock.
+    Added support for the flat partial payment amount
+    Added new type of the product option -> additional price
+    Added ability to delete from products options library
+    Added ability to set the custom date format for the postpurchase created
+    Added minimum order limit
+    Added throttle transactions
+    Improved product filters mechanism
+
+     
+    Added quote link to the user orders grid
+    Added partial payments support for the quote system
+    Added ability to sign quotes (quote - signature)
+    Added ability to drag products inside the product list in quotes
+    Added new -> "quote signed only" status for the quote system
+    Added quote auto-saving (admin part)
+
+     
+    Added invoice prefix label
+    Added support for partial payment for the PAYPAL on the quote page
+
+Core:
+
+    Added ability to drag system popups.
+    Added width and height to featured only widget
+    Added sneak peek eye to all password fields.
+    Added browser spell check for "text only" widget
+
+News system:
+
+    Added ability to exclude tags option for the news list widget
+    Added support for custom canonical URL (via MHUB only)
+
+Email notification system:
+
+    Added mobile app support/configuration
+    Added "avatar link", "personal calendar URL" and lead source lexemes for email templates
+
+CRM:
+
+    Added dashboard welcome screen
+    Added email validation service for the leads emails
+    Added goals configuration screen
+    Added ability to specify due date for the tasks
+    Added IMAP configuration screen for salesperson role
+    Added tags assigning via workflows
+    Added lead source for the workflows
+    Added user/lead group synchronization
+    Added merging lead documents during a lead merge
+    Added advertiser accounts config
+    Added additional notifications for the tasks
+    Added additional notifications for meetings
+    Added mass-action for the organizations' grid - delete organizations
+
+General improvements:
+
+    Added support for the PHP 7.4
+    Different fixes and optimization
+
+July 24th 2020 SEOTOASTER V3.2
+SeoToaster CMS
+Added Voip for the users screen
+Added strict option for the general website search
+Added page folders functional
+Added user prefix
+Added "don't send reply email" for the forms
+Added filter by role on "manage users grid"
+Added PWA support
+Added blacklist for the forms
+Added page preview crop
+Add copy link for the files on the "Media" screen
+Added user remote authorization
+Added ability to login as user on the manage users screen
+Added copyright widget
+Changed mobile and phone masks format for FR and GB
+
+SeoToaster Shopping Cart
+Added suppliers functional 
+Added zone restrictions for the coupons 
+Added default user group after the registration during checkout 
+Added product inventory and qty to product lists 
+Added one time use coupon 
+Added wish-list functional 
+Added product dimensions (height, width, length) 
+Added salesperson only - magic space 
+Added signature to the profile screen 
+Added purchase a gift option during checkout 
+Added user groups assignment based on the customer params 
+Added product custom attributes 
+Added order sub-type 
+Added group-only- magicspace 
+Added notify-me widget 
+Added non taxable group 
+Added custom label for the shipping service
+Added reccuring billing support
+
+SeoToaster Ultimate CRM
+Added more search options to the lead and organization filters
+Added organization notes
+Added lead filtration for the graphs.
+Added default mobile country code and country code
+Added sales by lead tag graph
+Added opportunities stats for the organizations
+Added ability to merge several leads manual/mass action
+Added organization website for the organization
+Added ability to archive sequence
+Added mass lead delete functional
+Added bounce emails support
+Added lead mass deletion
+Added support for the external forms sms
+Added custom field tabs
+Added log for emailsequence emails
+Added lead workflow configuration screen
+Added bcc tracking emails
+Added additional ip-address tracking

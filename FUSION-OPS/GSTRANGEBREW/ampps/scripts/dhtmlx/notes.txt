@@ -1,0 +1,2 @@
+Release date : https://docs.dhtmlx.com/suite/whatsnew.html
+Download package from this link https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml 

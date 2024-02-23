@@ -1,0 +1,63 @@
+mantisbt - 2.25.2 Released 2021-06-16
+======================================
+Security and maintenance release, fixes vulnerabilities in Custom Fields management page (CVE-2021-33557) and in the PHPMailer library, as well as a PHP 8 compatibility issue.
+0028552: [security] CVE-2021-33557: XSS in manage_custom_field_edit_page.php (dregad)
+0028803: [custom fields] PHP 8: "Bad Request" error on custom field filters (dregad)
+0028821: [security] Update PHPMailer to 6.5.0 (dregad)
+
+mantisbt - 2.25.1 Released 2021-05-12
+======================================
+Security and maintenance release, fixes a couple of vulnerabilities in PHPMailer and Chart.js libraries, as well as a few other minor issues.
+0028084: [ui] Labels for email notifications in User Prefs page appear in bold (dregad)
+0028082: [ui] Project Edit Page does not display check boxes (dregad)
+0028076: [plug-ins] Bundled plugins 2.25.0: incorrect Mantis requirement (dregad)
+0028080: [ui] Unsightly vertical offset of the "Update Prefs" and "Reset Prefs" buttons. (dregad)
+0028106: [administration] Error removing project (dregad)
+0028112: [ui] Incorrect spacing between icon and text on manage_user_edit_page.php (dregad)
+0028530: [security] Update PHPMailer to 6.4.1 (fixes CVE-2020-36326) (dregad)
+
+mantisbt - 2.24.4 Released 2020-12-30
+======================================
+Security and maintenance release, addressing 6 CVEs: an XSS issue, an SQL injection in the SOAP API and several information disclosure issues including a critical one allowing full access to private issues' contents. All installations are strongly advised to upgrade as soon as possible.
+
+Many thanks to randomdhiraj, ethicalhcop and d3vpoo1 (https://gitlab.com/jrckmcsb), for identifying and responsibly reporting these security issues.
+
+This release also includes a few PHP 8.0 compatibility fixes, including a major one causing an access denied error for all users when updating issues.
+0027361: [security] Private category can be access/used by a non member of a private project (IDOR) (dregad)
+0027779: [security] CVE-2020-35571: XSS in helper_ensure_confirmed() calls (dregad)
+0026794: [security] User Account - Takeover (dregad)
+0027363: [security] Fixed in version can be changed to a version that doesn't exist (dregad)
+0027350: [security] When updating an issue, a Viewer user can be set as Reporter (dregad)
+0027357: [security] Attacker can leak private information via different functionality (dregad)
+       0027728: [security] CVE-2020-29604: Full disclosure of private issue contents, including bugnotes and attachments (dregad)
+       0027727: [security] CVE-2020-29605: Disclosure of private issue summary (dregad)
+       0027726: [security] CVE-2020-29603: Disclosure of private project name (dregad)
+0027370: [security] CVE-2020-35849: Revisions allow viewing private bugnotes id and summary (dregad)
+0027495: [security] CVE-2020-28413: SQL injection in the parameter "access" on the mc_project_get_users function throught the API SOAP. (dregad)
+0020690: [bugtracker] inconsistent UI for view bugnote revision (dregad)
+0027444: [security] Printing unsanitized user input in install.php (atrol)
+0027464: [printing] print_manage_user_sort_link Function Parameter Required after Optional (atrol)
+0027465: [code cleanup] Declaring a required parameter after an optional one is deprecated in PHP 8 (atrol)
+0027704: [javascript] Javascript error in View Issues page (dregad)
+0027799: [bugtracker] Adapt Error handler to PHP 8 (dregad)
+0027806: [bugtracker] Impossible to edit issues with PHP8 (dregad)
+
+mantisbt - 2.24.3 Released 2020-09-25
+======================================
+Security release including 3 CVEs. Many thanks to d3vpoo1 (https://gitlab.com/jrckmcsb) for identifying most of the issues.
+0027039: [security] CVE-2020-25781: Access to private bug note attachments (dregad)
+0027268: [security] Admin can get issues assigned to users not allowed to handle them (dregad)
+0027275: [security] CVE-2020-25288: HTML Injection on bug_update_page.php (dregad)
+0027276: [security] Send reminder to viewer (dregad)
+0027283: [security] Admin can set viewer as a tag creator (dregad)
+0027284: [plug-ins] Priority can override to any positive integer (dregad)
+0027299: [code cleanup] Remove code duplication in File API (dregad)
+0027303: [code cleanup] When processing categories, it is not necessary to know the project id (dregad)
+0027304: [security] CVE-2020-25830: HTML Injection in bug_actiongroup_page.php (dregad)
+
+mantisbt - 2.24.2 Released 2020-08-07
+======================================
+Security release
+0027056: [security] CVE-2020-16266: HTML injection (maybe XSS) via custom field on view_all_bug_page.php (dregad)
+0027003: [security] Update PHPMailer from 6.1.4 to 6.1.6 (dregad)
+

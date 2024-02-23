@@ -1,0 +1,31 @@
+4.0.1 (2021-10-08)
+Contributors
+
+    Jerôme Bakker (11)
+    Jeroen Dalsem (7)
+
+Bug Fixes
+
+    blog: use route name as page title (ead3647b)
+    comments: no longer disable save button after form submission (03651f26)
+    core: do not respond with redirect on failure of ajax requests (4222ac92)
+    notifications:
+        mute page of a comment shows relevant entities (e297bda2)
+        disable subscribe button if you can't subscribe (ea612bb4)
+        (un)subscribe buttons only for logged in users (824291fb)
+    site_notifications: prevent input limit reached in bulk actions (e83df87c)
+    systemlog: only log before and after events if there are handlers (5fb8189a)
+    thewire: output of the new wire notification in HTML e-mail (c161429b)
+    views: correct default behaviour for showing entity menu on PHP 8 (8f9f3827)
+
+4.0.0 (2021-09-24)
+Contributors
+
+    Jerôme Bakker (11)
+    Jeroen Dalsem (4)
+
+Bug Fixes
+
+    cli: allow batch upgrades to run indefinitely (5b6b4419)
+    i18n: allowed languages returns filtered language keys (ff574222)
+    upgrade: content owner subscription is now an async upgrade (d8abe11c)

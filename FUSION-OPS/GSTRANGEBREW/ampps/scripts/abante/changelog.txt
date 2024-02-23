@@ -1,0 +1,314 @@
+AbanteCart version 1.3.1
+
+In this release:
+
+- Core: taskManager. fix of error output
+- Core: ALoader improvement. Added debug backtrace
+- Core: added Date product option type ACORN-108
+- minimal php version now 7.3.0
+- Core: ACart minor improvements
+- Core: core/lib/config.php fixes related to seo-postfix and config store id type cast
+- Core+ SF: changes related to virtual products purchasing (gift certificates etc)
+- Core: changes related to virtual products purchasing (gift certificates etc)
+- Core: changes related to AResource::getMainThumbList() method.
+- Core: add hook to category_top, category_bottom block and manufacturer page
+- Core: changes related to virtual products purchasing (gift certificates etc)
+- Core+ SF: changes related to virtual products purchasing (gift certificates etc)
+- Core: html-class improvement (number, email input types)
+- Core: AResource minor improvement
+- Core: core/engine/extensions reformatting
+- Core: ALayout improvement related to hooks
+- Core: AResource bug fix
+
+Admin: 
+- Admin: ACORN-563 embed in multistore fix
+- Admin: general.js fix related to tasks ACORN-554
+- Admin: collection controller fix
+- Admin: global search improvement, added search by sku ACORN-549
+- Admin: collection controller fix
+- Admin: email templates controller and model code improvements
+- Admin: fix related to cdn-image-downloads from import csv-file
+- Admin: added hook calls into customer controller
+- Admin: order details minor improvement of tpl
+- Admin: added check for extensions layouts xml into template installation and template switch processes
+- Admin: fix for storefront_order_confirm email template
+- Admin: collection model fix
+- Admin: lib configManager fix
+- Admin: order totals grid improvement (related to predefined sort and calculation orders for balance and total)
+- Admin: collection form js-fix
+- Admin: language manager fix related to auto-translations
+- Admin: package manager fix. Added "tax" extension type + reformatting
+- Admin: package manager fix. Added "tax" extension type + reformatting
+- Admin: sale/contact email RL-image's URL fix
+- Admin: product option value url fix
+- Admin: controller for downloading file improvement
+
+Storefront: 
+- improvement related to option value images
+- ACORN-561 guest and logged in customer sessions fix
+- fast checkout payment fix ACORN-560
+- Request add cost column method (#1485)
+- ACORN-559 fast checkout order summary tax display fix
+- ACORN-552 taxes report: incorrect orders count
+- Guest Checkout Create Account feature fix ACORN-557
+- ACORN-558 base product weight field description
+- upgrade scripts fixes
+- Add product option cost (#1484)
+- ACORN-553 banner group name issue fix
+- ACORN-551 "add to cart" buttons on home page blocks
+- #1472 typo fix
+- fix ACORN-548 embed: options values images
+- fix ACORN-267 Pickup from Store use the store address for taxes
+- #1464 wordpress embed fast checkout buttons fix
+- #1483 embed fix
+- embed code default height fix
+- ACORN-550  Typed property ControllerPagesCatalogCollections::$error fix
+- #1472 fileinfo PHP extension check to the 1.3 installation and upgrade
+- #1464 mobile add to cart buttons fix
+- fix ACORN-255 Import wizard category split separator
+- ACORN-547 FastCheckout fix
+- #1482 WordPress 5.8 SameSite cookie issue
+- #1473 default_ups. reformatted code
+- #1472 system requirements refactoring
+- #1472 minimal version of php now 7.4
+- #1457 extra white space in front of the email headers
+- add hooks to admin order details and order invoice (#1480)
+- Storefront: order details minor improvement of tpls
+- Collection model fix
+- Account/logout controller improvement
+- Catalog/collection model fix
+- Rounding fix related to taxes and 3 digits after decimal points. ref. https://forum.abantecart.com/index.php?topic=9072.new;topicseen#new
+- add the label id and the additional hook (#1474)
+- add hook, change hook location and change private $error to public $error (#1469)
+- FastCheckout shipping method icon fix
+- add hooks to templates and admin product options page (#1467)
+- FastCheckout: added hook vars call into tpls
+
+Extensions: 
+- avatax improvement related to getting taxLines
+- FastCheckout stripe address line fix ACORN-318
+- Default Stripe minor fix ACORN-318
+- Avatax fix
+- authorizenet error in php v8 (#1479)
+- FastCheckout. changed default sort order (run order) from 1 to 10
+- FastCheckout installation improvement (adding layouts to custom templates)
+- Avatax fix
+
+AbanteCart 1.3.0 release
+
+Core:
+
+    Wodrpress integration support
+    PHP v8.0 support
+    jQuery upgrade to v3.5.1
+    Resource Library images path improvement
+    New Get Embed code modal. Embed links code and copy
+    Added error reporting levels support based on settings
+    SSL detection improvement
+    Same site cookies fix
+    tinyMCE editor update
+    AMail class remove of final and change private to protected properties
+    Deprecated HTML Page cache
+    Overall cache fixes and improvement
+
+Control Panel:
+
+    Dashboard new icons
+    Default extensions new icons
+    Category selector multi-store display
+    Product and categories grid new bulk action
+    Grid filters improvements
+    Email preview page
+    show map for order address. Google Maps API
+    order recalculation fix related to adding total in not default currency
+    ontroller/pages/extension. added hook call
+    model language fix related to mysql8
+    Crontab help with ready to run Linux command
+    Resource library drag-n-drop fix
+
+Storefront:
+
+    Multilingual store logo support
+    Same domain multi-store support
+    Improved phone validation and Regex Pattern setting
+    Allow coupons to be assigned per category
+    Reformat of account/edit controller
+    Search in product descriptions now includes blurb field
+    Controller account subscriber fix related to hook calls
+    performance improvement of onlineNow model
+    responses/product/product added backward compatibility
+    Fast checkout is now default and standard checkout is deprecated (will be removed in 1.3.2).
+
+Core Extensions:
+
+    Aditional extension hooks for AOrder and ACartclases and improve extensions API
+    Allow extending of ADownload class
+    Cardknox new payment extension
+    PayPal standard store logo fixes
+    2Checkout sandbox deprecated
+    PayPal Express totals details
+    Local delivery Tax class selection
+    Update default local delivery to work with asterisk/wildcard
+    Fast Checkout summary tax fixes
+    Fast checkout downloads email fix
+    Fast checkout require a phone number for registered customer
+    Fast checkout form validations improvements
+    cardconnect currency admin display fix
+    Neowise deprecated
+    Stripe account transactions list fix
+    Stripe Added Account ID
+    Stripe publishable key fix
+    shipping extensions grid fix
+
+Additional improvements and bug fixes reported on the forum and GitHub.
+
+AbanteCart version 1.2.16
+
+In this release, we bring a few new features, such as one-page fast checkout, product collections, email templates, local delivery, and others.
+AbanteCart v1.2.16 also includes a number of improvements and fixes based on customer feedback.
+
+Core:
+- PHP v7.4 support
+- Webp image format support
+- Append php call stack into db-driver exception
+- HTML Cache deprecated
+- Improve tax class
+- Add Mustache library
+- Parameter tampering fix: Price manipulation of products
+- Enforce same-origin iframe use only
+
+Control Panel:
+- Additional settings for local business into the store details page
+- Products/categories/brands collections
+- New product review settings and management
+- Stock auto-disable fix
+- Order edits, currency handling on different browsers
+- Bugfix with multi-currency order recalculation
+- Email templates and management
+- Product import bug fix
+- Listing grid icons and CSS updates
+- Set minimal search chars of 2 for ajax chosen
+- mce-editor JavaScript fix
+
+Storefront:
+- Google Recaptcha V3 support
+- Fast one-page checkout
+- improvement validation of parameters for a few methods of catalog/product model.
+- A country without States issue fix    
+- Google Tag Management
+- Products/categories/brands collections
+
+Core Extensions:
+- New Fast one page checkout
+- New Local Delivery shipment
+- Stripe added 3d-secure support and library updated
+- COD fixes
+- LiqPay upgrade
+- Realex upgrade
+- Authorize.net update
+- Cardconnect upgrade
+- Payza payment deprecated
+
+Improvements and bug fixes reported on the forum and GitHub.
+
+AbanteCart version 1.2.15
+
+This is unplanned release to provide clarity and better interface for multi-location stock management.
+Release includes fixes to multi-location stock management as well
+
+Core:
+- Stock multi-locations support improvement
+- Mysql strict mode improvement (#1236)
+- Added default value for invoice_prefix
+- Add ability to import product option images
+- Added buffering into apdomysql driver
+
+Control Panel:
+- Added multi-locations support to order edit page
+- Menu and dashboard display now reflects user permissions
+- Return to stock order edit page corrections.
+
+Storefront:
+- Shopping Cart page fix related to tax included in the price (#1269)
+- Correction to images display for product options in shopping cart and product details pages
+
+Extensions:
+- PayPal express minor fix (#1267)
+
+Improvements and bug fixes reported on the forum and github.
+
+
+AbanteCart 1.2.14 is now released
+Created by Boris Basara
+
+New AbanteCart v1.2.14 is now ready. This release comes with improvements, bug fixes, and payment extension updates.
+
+Below are the release notes for version 1.2.14:
+
+Core:
+
+    Stock multi-locations support for products and options
+
+    Testing with PHP 7.3 and warnings resolution
+
+    Testing with MySQL 8.0 and warnings resolution
+
+    Error backtrace and handling improvement
+
+    Refactoring related to csrf-tokens and backward compatibility
+
+    Cache related bug fixes and improvements
+
+    MySQL driver improvement
+
+    Fix to get remote IP while server behind Cloudflare or proxy
+
+Admin:
+
+    improvement of scheduled tasks running
+
+    Added column sku into order_products and order_options tables
+
+    Improve product tags filtering on product create and update
+
+    Improved UI for switch (on/off) buttons
+
+    Multi-store custom block content support
+
+    Product tags improvement
+
+    Multi-store blocks handling improvement
+
+    Form Manager fix for checkboxgroup/multiselectbox field type
+
+Storefront:
+
+    Added product listing layout
+
+    Manufacturers listing block fix
+
+    Menu language related bug fix
+
+    added new data-sources for auto-listing block (manufacturers, featured, bestsellers,latest)
+
+    Show options specific image for product in the cart and after purchase
+
+    Set logo container to be fixed width/height
+
+    Embed mode JavaScript error bug fix.
+
+    Google Analytics eCommerce tracking fix
+
+Extensions:
+
+    Deprecated Authorize.net AIM payment and replaced with new one
+
+    Stripe API and SDK update
+
+    Fix for partial payment issue with PayPal payment (in case of partial store credit)
+
+    Resolved issue with PayPal refund with non-default currency.
+
+API:
+
+    Added subcategories handling to Storefront API

@@ -1,0 +1,5 @@
+# .htaccess-Datei
+AuthType Basic
+AuthName 'Protected area - Please insert password!'
+AuthUserFile [[softpath]]/temp/secure/.htpasswd
+require user [[admin_username]]

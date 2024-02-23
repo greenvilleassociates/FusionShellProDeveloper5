@@ -1,0 +1,4 @@
+1)Download package named 'GRAV CORE+ADMIN PLUGIN' from http://getgrav.org/downloads as it has the admin panel (core package only has homepage)
+2. Compare grav-update.zip and grav-admin.zip. If there is a change then change upgrade method and extract grav-update.zip instead of grav-admin.zip. (https://learn.getgrav.org/basics/installation)
+3. PHP REQUIREMENT LINK : https://learn.getgrav.org/17/basics/requirements
+4. The folder /user/accounts/ needed writable permission in 1.7.12. We have added this as script throws error while hitting admin url that it isn't writable while installing through Softaculous. Please check if this is needed in next version in install and upgrade both.(Needed in 1.7.13 as well)

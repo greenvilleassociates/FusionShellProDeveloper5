@@ -1,0 +1,41 @@
+1.8.2
+
+    fixed: display SVG logo for IE 11 (#2864)
+    fixed (again) : DB upgrade procedure (#2933)
+    fixed: cosmetic issue with Docker falsely warning about unencrypted password (#3040)
+    improved: minor security improvements - iframes clickjacking and login nonce (#3034), potential XSS (#3041)
+    improved: SSL support for proxies (#3044)
+    improved: inline documentation and unit tests
+    added: more filters in admin pages (#2912), HTTP requests (#2951), to deal with user defined consts (#3048)
+    added: documentation for API action "version" (#2957)
+
+1.8.1
+
+    fixed: upgrade procedure with MySQL 8 & table names containing dashes (#2844, #2846)
+    fixed: function to make public some pages on private installs (#2859)
+    added: all hook to debug YOURLS and plugins (#2860)
+    improved: plugin inline documentation
+
+1.8
+
+    fixed: support for PHP 8
+    removed : support for PHP prior to 7.2
+    improved: IDN domain, and UTF8 URLs and titles (aka Number One Issue Since Day One)
+    improved: timezone management
+    improved: YOURLS UI and logo, now in SVG
+    improved: several little things
+    fixed: several little bugs
+	
+1.7.9
+
+    improved: compatibility of YOURLS with proxies and reversed proxies
+    improved: accept timestamped signature in API requests with arbitrary hash
+    improved: YOURLS pages are now located in user/ and documented
+    improved: accessibility, with labels and aria tags in the main admin screen
+    fixed: various little things here and also there
+
+1.7.6
+
+    improved: due to popular demand, "Random Keywords" is now a core plugin bundled with YOURLS
+    fixed: JSONP parameters now match the documentation, duh
+    fixed: various little things here and also there

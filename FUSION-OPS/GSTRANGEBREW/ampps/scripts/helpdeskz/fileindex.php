@@ -1,0 +1,12 @@
+.htaccess
+.readthedocs.yml
+LICENSE.txt
+README.md
+assets
+docs
+favicon.ico
+hdz
+index.php
+pipe.php
+robots.txt
+upload

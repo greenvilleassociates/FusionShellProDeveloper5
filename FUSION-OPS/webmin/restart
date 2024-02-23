@@ -1,0 +1,2 @@
+#!/bin/sh
+/gweb/webmin/stop --kill && /gweb/webmin/start

@@ -1,0 +1,88 @@
+5.10.0 (2021-05-16)
+
+Fixed:
+
+    Core: Fix double encoding in spoon library #3400
+    Core: Fix files not loading on some apache servers #3361
+    Core: Update packages #3398 #3394 #3386 #3385 #3382 #3364
+    Blog: Fix broken thumbnail in the backend #3360
+    Pages: Fix usertemplates #3371 #3365
+
+Security:
+
+    Authentication: Fix xss in redirect url #3355 #3353
+    MediaLibrary: Fix xss in media item title #3401
+    MediaLibrary: Fix xss in video ids #3402
+    Search: Fix xss in search referrer #3387
+    Spoon: Fix xss in form input files #3357
+
+Added:
+
+    Core: Add canonical URL to SEO tab #3188
+    Core: Add CLI command to install a module #3323
+    Core: Throw an event when the session id changes #3377
+    MediaLibrary: Add edit button to media item within a form #3192
+    MediaLibrary: Added a search box to the media library #3189
+    Pages: Make it possible to set an id in a usertemplate #3166
+
+Changed:
+
+    Core: Improve GDPR consent dialog #3372
+    Github: No codecov annotations in PR's #3378
+    Github: Upgrade to native dependabot #3384
+
+5.9.3 (2021-03-21)
+
+Fixed:
+
+    Core: Update packages #3332 #3329 #3328 #3325 #3282 #3269
+    Github: Add badge for security issues #3315
+    Github: Make sure we test all supported php versions #3254
+    Github: Remove duplicate github issue reporting system #3288
+    Groups: Excape new reserverd keywords in mysal #3264
+    Locale: Clarify that html in translations is not considered a security issue #3270
+    Pages: Duplicate user template images when copying page #3320
+    Pages: Rebuild page cache when changing url #3319
+
+Security:
+
+    Core: Security fixes #3351
+    Locale: Fix xss in translation datagrid #3314
+    Spoon: Fix css bug in Spoon Library #3316
+
+5.9.2 (2020-12-05)
+
+Fixed:
+
+    Core: Add composer v2 support #3205
+    Core: Allow switching in the backend to a language that is disabled in the frontend #3202
+    Core: Bugfix consent dialog #3226
+    Core: Filter on empty levels #3176
+    Core: Fix permission check for god user #3201
+    Core: Only copy the text and not the html when editing a value in a datagrid #3203
+    Core: Pin xdebug v2 for PHP 7.1 support #3246
+    Core: Prevent floating elements from covering the recaptcha badge #3204
+    Core: Replace & to && #3194
+    Core: Set cache policy for woff2 #3212
+    Core: Update packages #3247 3221 3220 3197 3183 3182 3242 3245 3169
+    Core: Upgrade phpstan #3227
+    Github: Add slack icon to Readme #3209
+    Github: Codecov should wait for 3 reports #3213
+    Github: Fix scrutinizer & coverage upload #3208
+    Github: Move from Travis to GitHub Actions #3175
+    Github: Move github repo files to .github dir #3172
+    Github: Use github actions badge on readme #3214
+    Installer: Add some missing permissions to the admin group during installation #3200
+    Location: Fix copying location widgets to another locale when there are no widgets #3199
+    MediaGalleries: Fix fade of slickslider clashing with bootstrap 4 #3168
+    MediaLibrary: Always require a media item to have a title #3190
+    Pages: Fix background images of usertemplates #3165
+    Pages: Fix error when adding pages as a non god user #3181
+    Pages: Translate the test usertemplate to English #3198
+
+5.9.1 (2020-08-18)
+
+Fixed:
+
+    Pages: Fix non god users not being able to save pages #3163
+

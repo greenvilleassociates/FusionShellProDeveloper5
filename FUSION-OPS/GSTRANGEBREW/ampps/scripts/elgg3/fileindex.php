@@ -1,0 +1,12 @@
+.gitignore
+.htaccess
+README.md
+composer.json
+composer.lock
+elgg-config
+index.php
+install.php
+mod
+phpunit.xml
+upgrade.php
+vendor

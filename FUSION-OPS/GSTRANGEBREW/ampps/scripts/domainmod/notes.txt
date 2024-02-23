@@ -1,0 +1,6 @@
+1. update `new_password` as 0 in "users" table to avoid reset password after login
+2. PHP REQUIREMENT LINK : https://domainmod.org/readme/
+Installer requires PHP 5.6 hence we have kept min php 5.6 in info.xml
+3. Install restricted on above versoin of mysql than 8.0.0 because "PASSWORD" function removed in 8.0. (https://dev.mysql.com/doc/refman/5.7/en/encryption-functions.html#function_password)
+4. Select "United States Dollar" in Currency and "America/New_York" in Timezone.
+5. Keep `full_url` in `settings` table to [[softurl]] because we delete the install folder through Softaculous. So it will give 404 error.

@@ -1,0 +1,165 @@
+Changes since 3.3.5-RC1
+Bug
+
+    [PHPBB3-16878] - Error in password_hash() with ARGON2 + Sodium & threadcount > 1
+
+Hardening
+
+    [SECURITY-254] - Disallow whitespace characters that might be invisible
+
+Changes since 3.3.4
+Bug
+
+    [PHPBB3-12075] - Language file Modules needs to be added to acp_extensions
+    [PHPBB3-13700] - Column 'field_show_on_pm' not created before migration profilefield_interests
+    [PHPBB3-16292] - Database errors during conversion not propagated
+    [PHPBB3-16570] - Automatic updater no longer handles merge conflicts
+    [PHPBB3-16657] - Encoded characters inserted from live search for usernames
+    [PHPBB3-16729] - Unknown named parameter $log_data in phpbb/log/log.php
+    [PHPBB3-16730] - Build changelog throwing PHP warnings on no changes in version
+    [PHPBB3-16749] - SQL error on installation
+    [PHPBB3-16757] - RTL problem in random question text in ACP
+    [PHPBB3-16765] - contact_admin_acp_module migration lacks effectively_installed check
+    [PHPBB3-16766] - Updater only shows truncated error messages
+    [PHPBB3-16767] - Migrator shows wrong migration as missing if unfulfillable
+    [PHPBB3-16770] - Invalid position of static qualifier in 3.3.4 migration
+    [PHPBB3-16772] - Emoji not supported in email signature
+    [PHPBB3-16773] - PostgreSQL backups are missing constraint declarations
+    [PHPBB3-16784] - Ignore .vscode files in git
+    [PHPBB3-16785] - Latest release missing from previous versions in build.xml
+    [PHPBB3-16787] - Error message when "fsockopen" is deactivated
+    [PHPBB3-16789] - user_delete documentation incorrect
+    [PHPBB3-16793] - PHP Warning when checking topic/post attachment visibility in PHP 8
+    [PHPBB3-16799] - OAuth external account linking triggers fatal error on PHP 8
+    [PHPBB3-16808] - Container used before initialization causes error in PHP8
+    [PHPBB3-16810] - The no closing tag in Custom BBCodes is still shown onclick
+    [PHPBB3-16812] - login_body.html missing dt tag for autologin
+    [PHPBB3-16823] - Datetime class incorrectly handles edge yesterday/today/tomorrow cases
+    [PHPBB3-16832] - Wrong singular language shown in UCP attachments
+    [PHPBB3-16865] - Update IRC + discord links in composer and documentation and update docs
+    [PHPBB3-16870] - Setting float config value can fail with CLI db:migrate
+
+Improvement
+
+    [PHPBB3-15729] - Don't unnecessarily encode email headers in Base64
+    [PHPBB3-15925] - Add core events for sync and mcp functions
+    [PHPBB3-16138] - Eliminate redundant f= and t= parameters from board urls
+    [PHPBB3-16736] - Enforce placement of visibility qualifiers after static
+    [PHPBB3-16748] - Update coding guidelines to place static after visibility qualifiers
+    [PHPBB3-16752] - Create event exporter to restructured text
+    [PHPBB3-16754] - Update doctum
+    [PHPBB3-16771] - Add core events to MCP
+    [PHPBB3-16783] - Remove structure only backup
+    [PHPBB3-16788] - Update s9e/text-formatter to latest
+    [PHPBB3-16795] - Add template events around signature in viewtopic
+    [PHPBB3-16798] - Scale down phpBB logo in readme
+    [PHPBB3-16804] - Extend bbcode help line tooltip
+    [PHPBB3-16809] - Reset UCP preferences at end of test
+    [PHPBB3-16816] - acp style html validation fixes
+    [PHPBB3-16822] - Replace patchwork/utf8 with symfony/polyfill
+    [PHPBB3-16829] - Add forumtitle and lastsubject text decoration hover
+    [PHPBB3-16831] - fix tabs missing delimiters and remove old commented classes
+    [PHPBB3-16850] - Update webfont.js to latest
+    [PHPBB3-16851] - Add Amazonbot, AhrefsBot and SemrushBot
+    [PHPBB3-16858] - Update to the latest version of jQuery 3.6.0
+    [PHPBB3-16867] - Update symfony and text-formatter to latest versions
+
+New Feature
+
+    [PHPBB3-16856] - Add lang_js() function to twig as replacement for LA_
+
+Task
+
+    [PHPBB3-16769] - Update composer to latest version
+
+Changes since 3.3.4-RC1
+Bug
+
+    [PHPBB3-16735] - Trying to access array offset on value of type bool
+    [PHPBB3-16739] - Wrong variable in report_pm.txt subject
+    [PHPBB3-16740] - Installation errors in php 8 when using postgresql
+    [PHPBB3-16743] - Properly check if TMP file exists - PHP 8
+    [PHPBB3-16747] - Typo in phpBB/language/en/email/post_in_queue.txt
+
+Changes since 3.3.3
+Bug
+
+    [PHPBB3-16655] - Suppress "you now also have to pass the CAPTCHA test" message for invisible CAPTCHAs
+    [PHPBB3-16685] - SQL error in ACP if database name contains a dash
+    [PHPBB3-16690] - Changing default argument in htmlspecialchars* functions causes test fail
+    [PHPBB3-16691] - Illegal string offset 'username' on MCP PM report pages
+    [PHPBB3-16696] - Unsupported operand types in viewforum.php - PHP8
+    [PHPBB3-16697] - Unable to login after conversion from phpBB2
+    [PHPBB3-16698] - Check for default char set in includes/acp_main.php checks only for 'UTF-8'
+    [PHPBB3-16705] - File upload fails with PHP 8 - Error parsing server response
+    [PHPBB3-16706] - Undefined array key when user is banned
+    [PHPBB3-16707] - Disable unstable PHP 8.1 builds on Github Actions
+    [PHPBB3-16719] - PHP notice/warning on installation
+
+Improvement
+
+    [PHPBB3-15392] - Change dirname(__FILE__) to __DIR__ everywhere
+    [PHPBB3-16589] - Change wording of e-mail templates to decrease word count
+    [PHPBB3-16620] - Output short array syntax in dev:migration-tips
+    [PHPBB3-16660] - Remove or Rename "Reset" Button in "Reset Password" Dialogue
+    [PHPBB3-16681] - Replace action icons with font icons
+    [PHPBB3-16684] - GitHub Actions should run on newly created tag and release branches
+    [PHPBB3-16686] - Simplify get_database_size() SQL query for PostgreSQL
+    [PHPBB3-16689] - Bitly oauth SQL error if identifier is null
+    [PHPBB3-16709] - Update s9e/text-formatter to latest release
+    [PHPBB3-16710] - Allow WEBP images in attachments
+    [PHPBB3-16712] - Implement thumbnails for WEBP images in attachments
+    [PHPBB3-16724] - Add some template events
+    [PHPBB3-16725] - Add MCP core event
+    [PHPBB3-16728] - Add search result template event
+
+Task
+
+    [PHPBB3-16726] - Update composer packages to latest versions
+
+Changes since 3.3.2
+Bug
+
+    [PHPBB3-16178] - Container_builder and Container don't use the same cache_dir when cache dir is overridden via env parameter
+    [PHPBB3-16535] - Migration from phpBB 2.0.x broken with MySQL 8.x
+    [PHPBB3-16582] - SQL error when saving profile with empty custom field of type "Numbers"
+    [PHPBB3-16619] - Spelling on non-existant
+    [PHPBB3-16629] - ACP get_database_size() fails on MySql 8.0.xx
+    [PHPBB3-16630] - Preserve the text manipulation API
+    [PHPBB3-16640] - MCP link not showing in menubar
+    [PHPBB3-16641] - Failure in config.php validation in ACP (Windows) - PHP 8
+    [PHPBB3-16646] - PHP fatal error while installing
+    [PHPBB3-16648] - "Access to undeclared static property" error on setExpectedTriggerError() tests
+    [PHPBB3-16653] - Recaptcha v3 - Request method is set even though that default isn't actually available
+    [PHPBB3-16656] - Outdated check in code for mbstring http_input & output
+    [PHPBB3-16665] - Fix Emoji for strings in board settings + new event
+    [PHPBB3-16666] - Windows tests in github actions can't write file in postgres
+    [PHPBB3-16667] - Remove unused create_schema install task
+    [PHPBB3-16670] - OAuth provider unique secret and key check fails on PHP 8
+    [PHPBB3-16673] - Invalid Atom feed
+    [PHPBB3-16677] - Event handlers inside dropdown containers not working in mobile view
+    [PHPBB3-16679] - Login form should respect setting for "Allow password reset"
+
+Improvement
+
+    [PHPBB3-15722] - Allow forum topicrow pagination to use topicrow values
+    [PHPBB3-16538] - Add MySQL 8 tests
+    [PHPBB3-16549] - Use PHPUnit 9.3+ for PHP 8.0+ tests
+    [PHPBB3-16606] - UCP_PM_VIEWMESSAGE.HTML Event Request
+    [PHPBB3-16607] - Oracle DBAL driver uses obsoleted PHP OCI8 aliases and functions
+    [PHPBB3-16617] - Add events to modify content status variables
+    [PHPBB3-16632] - Update composer to version 2
+    [PHPBB3-16636] - Add PHP 8.0 builds to TravisCI
+    [PHPBB3-16659] - Use Github Actions instead of TravisCI and AppVeyor
+    [PHPBB3-16661] - Clean up github actions tasks after merge
+    [PHPBB3-16675] - Restore checking commit messages
+    [PHPBB3-16676] - Make Github actions cache composer dependendencies
+    [PHPBB3-16678] - Add support for Traits in code sniffer
+
+New Feature
+
+    [PHPBB3-15951] - Add core events to core.mcp_delete_topic_modify_*
+
+Task
+
+    [PHPBB3-16633] - Update pull request template after end of life of 3.2

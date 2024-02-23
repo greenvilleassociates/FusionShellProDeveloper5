@@ -1,0 +1,2 @@
+1. PHP REQUIREMENT LINK : https://github.com/flatpressblog/flatpress
+2. We offer incremental upgrade i.e for example 1.1 to 1.2 but not from previous versions to 1.2 as vendor provides upgrade zip for upgrading incremental versions. change minimum required version in <min_require> tag in info.xml and make relevant changes in upgrade.php in every update. Download upgrade package from here https://www.flatpress.org/download

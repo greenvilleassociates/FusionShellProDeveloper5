@@ -1,0 +1,4 @@
+1. installer dont ask for dbprefix but asign random dbprefix
+2. PHP REQUIREMENT LINK : https://akaunting.com/docs/requirements
+3. (9, 1, 'default.locale', '[[language]]'). Add this entry explicitly `[[dbprefix]]settings` table and increase autoincrement accordingly. This is to enable admin panel language. Earlier this entry used to get added by script while installation. Now it is added when language is changed from admin panel.
+(Since 2.1.11)

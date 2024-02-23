@@ -1,0 +1,41 @@
+{
+    "common" : {
+        "client_id" : "[[client_id]]",
+        "server_timezone" : "America/New_York"
+    },
+    "database" : {
+        "type" : "innodb",
+        "host" : "[[softdbhost]]",
+        "user" : "[[softdbuser]]",
+        "password" : "[[softdbpass]]",
+        "database" : "[[softdb]]",
+        "create_database" : false
+    },
+    "filesystem" : {
+        "data_dir" : "[[softdatadir]]"
+    },
+    "http" : {
+        "path" : "[[softurl]]"
+    },
+    "language" : {
+        "default_language" : "en",
+        "install_languages" : ["en"]
+    },
+	"logging" : {
+		"enable" : 1,
+		"path_to_logfile" : "[[softdatadir]]/ilias.log",
+		"errorlog_dir" : "[[softdatadir]]/log"
+	},
+    "systemfolder" : {
+        "contact" : {
+            "firstname" : "[[admin_fname]]",
+            "lastname" : "[[admin_lname]]",
+            "email" : "[[admin_email]]"
+        }
+    },
+    "utilities" : {
+        "path_to_convert" : "[[convert]]",
+        "path_to_zip" : "[[zip]]",
+        "path_to_zip" : "[[unzip]]"
+    }
+}

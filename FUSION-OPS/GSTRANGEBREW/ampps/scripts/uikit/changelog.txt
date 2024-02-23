@@ -1,0 +1,48 @@
+3.7.6 (October 8, 2021)
+
+    Fixed
+    Fix Drop closing if clicked within through touch event
+    Fixed
+    Fix Slider not animating slides if slide wider than slide container
+
+3.7.5 (October 5, 2021)
+
+    Change
+    Improve Cover component performance if applied to none video
+
+    Fix
+    Fix toggle behavior in Toggle component
+    Fix
+    Fix Toggle component no longer sets tabindex in media mode
+
+3.7.4 (September 23, 2021)
+
+    Added
+    Add itemNav option to Switcher component
+
+    Change
+    Focus modal/offcanvas upon opening
+
+    Fixed
+    Fix regression in Toggle component
+    Fixed
+    Fix keyboard navigation in Navbar component
+    Fixed
+    Fix navbar toggle style and navbar item inverse style if dropdown is open
+
+3.7.3 (September 9, 2021)
+
+Added
+
+    Add tile hover hooks
+
+Fixed
+
+    Fix toggle behavior in Toggle component
+    Fix navbar item style if dropdown is opened and container option is used
+
+3.7.2 (August 6, 2021)
+
+    Fixed
+    Fix text alignment if tabs are left or right aligned in Tab component
+

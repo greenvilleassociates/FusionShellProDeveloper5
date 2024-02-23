@@ -1,0 +1,152 @@
+
+8.5.6 Release Notes
+Sep 16, 2021
+By admin
+New Features
+
+    Added Session Options Dashboard page that will allow administrators to configure many aspects of the session cookie.
+
+Behavioral Improvements
+
+    Added support for translation placeholders (thanks shahroq)
+    Re-enabled connect to community for the marketplace; reworked to sidestep issues with browser cookie compatibility
+    Add autocomplete=off to various password fields.
+    "Index Search Engine - Updates" job should not re-index all entries (thanks hissy)
+    Fix default formatting of datetime exports in express export csv (thanks deek87)
+    Improvements to IP parsing for actions like allowlist/blocklist (thanks mlocati)
+
+Bug Fixes
+
+    Fixed error when pages weren’t getting accurately set in the full page cache.
+    Fixes for errors/warning occurring with PHP 7.3 and 7.4 when "Consider warnings as errors" is set (thanks arielkamoyedji)
+    Additional dialogs within CKEditor link dialog (Sitemap, Browse Server) prevent further page scrolling even after being closed (thanks hissy)
+    Fix error attaching a Facebook account to a user profile (thanks biplobice)
+    Fixed disappearing survey and calendar event dialogs in some cases (thanks hissy)
+    Bug fixes on switching language using the Switch Language block (thanks biplobice)
+    Fixed inability to save channel logging settings on the Dashboard page (thanks Hmone23)
+    Fixed bug where layouts can’t be moved above blocks (thanks Haeflimi)
+    Fixed bug in the 8.5 file manager when selecting on single file in multi-file selector (thanks deek87)
+    Fix to show page drafts created by the current user (thanks hissy)
+    Fix user selector attribute being un-searchable (Note: you will have to recreate your attributes before they are properly searchable).
+
+    Bug fixes to search popup with pagination (thanks deek87, hissy)
+
+    Fixed 403 Error in Page Defaults when using REDIS for Caching (thanks deek87)
+
+Security Fixes
+
+(Special thanks to Solar Security Research Team and Concrete CMS Japan)
+
+Fixes for High Vulnerabilities *Fixed Hackerone report 1102067, CVE-2021-40097: Authenticated path traversal to RCE by adding a regular expression
+
+*Fixed Hackerone report 1102080, CVE-2021-40098: Path Traversal leading to RCE via external form by adding a regular expression
+
+    Fixed Hackerone report 982130, CVE-2021-40099: RCE Vulnerability by making fetching the update json scheme from concrete5 to be over HTTPS (instead of HTTP)
+    Fixed Hackerone report 616770, CVE-2021-40100: Stored XSS in Conversations (both client and admin) when Active Conversation Editor is set to "Rich Text" *Fixed Hackerone report 921288, CVE-2021-40102: Arbitrary File delete via PHAR deserialization
+
+Fixes for Medium Vulnerabilities * Fixed Hackerone report 1063039, CVE-2021-36766: Security issues when allowing phar:// within the directory input field. (thanks deek87)
+
+    Fixed Hackerone report 1102211, CVE-2021-40103: Path Traversal to Arbitrary File Reading and SSRF
+
+    Fixed Hackerone report 1102088, CVE-2021-40104: SVG sanitizer bypass by swapping out the SVG sanitizer in the core with this third party library darylldoyle/svg-sanitizer
+
+    Fixed Hackerone report 1102054, CVE-2021-40105: Fixed XSS vulnerability in the Markdown Editor class in the conversation options
+
+*Fixed Hackerone report 1102042, CVE-2021-40106: Unauth stored xss in blog comments (website field)
+
+*Fixed Hackerone report 1102020, CVE-2021-40107: Stored XSS in comment section/FileManger via "view_inline" option
+
+*Fixed Hackerone report 1102018, CVE-2021-40108: Adjusted core so that ccm_token is verified on "/index.php/ccm/calendar/dialogs/event/add/save" endpoint
+
+Fixes for Low Vulnerabilities *Fixed Hackerone report 1102225 which was split into two CVEs: An attacker could duplicate topics and files which could possibly lead to UI inconvenience, and exhaustion of disk space. For CVE-2021-22949: Added checking CSRF token when duplicating files in the File Manager. For CVE-2021-22953: Added checking CSRF token when cloning topics in the sitemap.
+
+*Fixed Hackerone report 1102177, CVE-2021-22950: To fix CSRF in conversation attachment delete action, updated core to verify ccm_token when conversation attachments are deleted.
+
+*Fixed Hackerone report 1102105, CVE-2021-40109: To fix a reported SSRF vulnerability, the core was updated to disable redirects on upload, add an http client method to send request without following redirects, and put in a number of url/IP protections (examples: blocked big Endian urls, blocked IP variants from importing, prevented importing from hexadecimal/octal/long IPs)
+
+8.5.5 Release Notes
+New Features
+
+    Let user specify the SMTP HELO/EHLO domain for their SMTP server (thanks mlocati)
+
+Behavioral Improvements
+
+    Removed version from meta generator tag.
+    CKEditor updated to 4.15.0 (thanks mlocati)
+    Page drafts are now viewable by the view page draft permission (thanks HMone23)
+    Updated list of UK counties (thanks Mesuva)
+    Update CKEditor from 4.15.0 to 4.15.1 (thanks mlocati)
+    Fix: make email log readable by decode quoted printable text (thanks hissy)
+
+Bug Fixes
+
+    Fixing bug where accidentally re-saving a theme preset layout (e.g. “Left Sidebar”) as a user preset would cause a site to become unresponsive.
+    Fixed bug where pages indexed through the CLI search index job weren’t indexed properly (thanks haeflimi)
+    Page Selector attribute now properly searchable (thanks dimger)
+    No longer fire event execute_job twice (thanks deek87)
+    Fixing error when rescanning a multilingual locale (thanks mlocati)
+    Fixed error or max execution timeout that can occur when logging out of multilingual websites (thanks hissy)
+    Fixed: [CKEDITOR] Error code: editor-element-conflict. (thanks mlocati)
+    Fixed error: No such file or directory error when editing an aliased block which is not editable (thanks mlocati)
+    Fix some issues when using tags on multilingual site (thanks hissy)
+    Fix duration of IP bans (they were supposed to last seconds but instead used the same value and in minutes) (thanks mlocati)
+    Fixed: Stacks don't update if caching is enabled (thanks hissy)
+    Correctly parse non-decimal IP addresses (thanks mlocati)
+    Fix: enable to send private message to all groups at once (thanks hissy)
+    Fixed: Redis cookie handler always use the session name as a prefix (thanks mlocati)
+    Fixed an error where 404 does not work in multi language cases under certain situations (thanks hissy)
+    More resilient upgrade routine when dealing with conflicting character sets in mysql (thanks mlocati)
+    Fix issue where a rich text field on a form block doesn't re-populate contents after submit (thanks Mesuva)
+    Fixed: Express Forms - CSV Export does not respect datetime format from config (thanks 1stthomas)
+    Fix bug: Express Form can generate same attribute keys for multiple attribute keys (thanks hissy)
+    Fixes filtering by multiple topic attributes on an item list (thanks hissy)
+    Banned words with multibyte characters are now accurately detected (thanks hissy)
+    Use UserMessageException when invalid path traversal is detected (thanks mlocati)
+        Do not remove picture elements on rendering textarea attribute value (thanks hissy)
+    Fix "call to a member function overrideCollectionPermissions() on a non-object" in AreaAssignment (thanks mlocati)
+
+Security Fixes
+
+    Fixed CVE-2021-28145 XSS in Surveys fixed (thanks deek87)
+    Fixed CVE-2021-3111 Stored XSS on express entries H1 report 873474
+
+Developer Updates
+
+    Allow routes with optional arguments (thanks mlocati)
+
+8.5.4 Release Notes
+
+Released June 9, 2020
+Bug Fixes
+
+    Fixing update errors that can happen (Update causes exception): https://github.com/concrete5/concrete5/issues/8729 (thanks mlocati)
+    8.5.3 incorrectly enabled multisite extensions that aren’t ready until version 9. These are disabled in 8.5.4.
+    Fix certain occasions where editing pages would result in composer being unable to load blocks. Fixes error “Unable to load block into composer” (Note: this will fix the issue for pages going forward, but existing pages with this error will not be resolved.)
+
+Additional Functionality Present in 8.5.3 not described in previous release notes
+New Features (Note: some of these are present in 8.5.3)
+
+    Added the ability to copy, paste, import and export style customizer settings at the page level (thanks mlocati)
+    Added new public identifier property to express entries; you can use this identifier to relate entries to each other, or within custom API requests in such a way that it can’t be guessed.
+    Added a new Group custom attribute type for use with Express.
+    Added the ability to specify file storage locations at the file folder level (thanks marvinde)
+    Added the ability to send private messages to all users in a specific group.
+    CSV files exported from Express objects now containing association data.
+    Added the ability to show/hide survey results in the survey block.
+    Added a console command to export express entities.
+    Added the ability to require associations be selected in Express forms.
+    Running the reindex search all function will now reindex all Express entities and entries as well.
+
+Behavioral Improvements (Note: some of these are present in 8.5.3)
+
+    Improvements to code quality, speed and efficiency (thanks mlocati)
+    Improvements to file importer code quality, better sanitization of problematic SVGs on upload. (thanks mlocati)
+    Much improved address attribute logic and presentation for non North American countries/provinces/states – see https://github.com/concrete5/concrete5/issues/7943 (thanks ahukkanen)
+    We now refresh the file manager after changing properties (thanks marvinde)
+
+Developer Improvements (Note: some of these are present in 8.5.3)
+
+    Added coding style guideline sniffer using phpcs directly into the concrete5 console (thanks mlocati)
+    Refactored file importer, added support for pre and post processors (thanks mlocati)
+    Generalizes IP Blocking, making it easier for developers to add support for blocking IPs based on custom actions (thanks mlocati)
+    Cleanup and improvements to the c5:package:pack command (thanks mlocati)

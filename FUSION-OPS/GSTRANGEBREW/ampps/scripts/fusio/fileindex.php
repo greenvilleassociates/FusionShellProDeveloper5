@@ -1,0 +1,16 @@
+.env
+.fusio.yml
+CHANGELOG.md
+DEVELOPMENT.md
+LICENSE
+README.md
+bin
+cache
+composer.json
+composer.lock
+configuration.php
+container.php
+provider.php
+public
+vendor
+.htaccess

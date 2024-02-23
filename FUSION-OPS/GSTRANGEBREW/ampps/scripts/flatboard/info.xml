@@ -1,0 +1,64 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Flatboard
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/forums/Flatboard
+	</ratings>
+	<space>
+		3862596
+	</space>
+	<support>
+		https://flatboard.org/index.php/forum
+	</support>
+	<version>
+	   3.0.1
+	</version>
+	<mod>1</mod>
+	<release_date>24-07-2021</release_date>
+	<admin>auth.php</admin>
+	<softversion>
+		4.5.4
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.0.0" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="json" />
+	<languages>
+	<english-overview>
+	<font size="5" color="#182e7a">Flatboard</font> is a Simple, Lightweight, Modern and fast Flat-File Forum, using Json and Markdown or BBcode.	
+	<br /><br />
+	Flatboard is released under the <a href="https://github.com/Fred89/flatboard/blob/master/LICENSE" target="_blank">MIT License</a>.
+	</english-overview>		
+		<english-features>
+			<ul>
+				<li><b>Simple : </b>
+					<ul>
+						<li>Super Easy to Use</li>
+						<li>Post and edit in place</li>
+						<li>Create your own extensions easily</li>
+					</ul>
+				</li>
+				<li><b>Lightweight : </b>
+					<ul>
+						<li>Json storage, Flatboard is designed to be fully portable without any dependencies</li>
+						<li>Customizable BBcode Editor</li>
+					</ul>
+				</li>
+				<li><b>Modern : </b>
+					<ul>
+						<li>Carefully designed elements and components</li>
+						<li>User interface is clean and intuitive</li>
+						<li>New concept blending blog and forum for dynamic comments!</li>
+					</ul>
+				</li>
+			</ul>
+		</english-features>
+	</languages>
+</soft>

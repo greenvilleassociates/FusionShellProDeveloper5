@@ -1,0 +1,69 @@
+<soft xmlns="http://www.softaculous.com">
+	<overview>
+		<img src="logo.gif" style="float:right;margin:10px;" alt="" />{{overview}}
+	</overview>
+	<features>
+		{{features}}
+	</features>
+	<demo>
+		http://www.softaculous.com/demos/Moodle_3.10
+	</demo>
+	<ratings>
+		http://www.softaculous.com/softwares/educational/Moodle_3.10
+	</ratings>
+	<space>
+		242941069
+	</space>
+	<support>
+		http://moodle.org/
+	</support>
+	<version>
+		3.10.7
+	</version>
+	<mod>4</mod>
+	<release_date>13-09-2021</release_date>
+	<admin>admin</admin>
+	<min_require>3.5.0</min_require>
+	<softversion>
+		4.1.7
+	</softversion>
+	<requirement check="php" type="version" operator="ge" value="7.2.0" />
+	<requirement check="mysql" type="version" operator="ge" value="5.7.0" mariadb="10.2.29" />
+	<requirement check="php" type="extension" name="mysqli" />
+	<requirement check="php" type="extension" name="mbstring" />
+	<requirement check="php" type="extension" name="intl" />
+	<requirement check="php" type="extension" name="iconv" />
+	<requirement check="php" type="extension" name="curl" />
+	<requirement check="php" type="extension" name="openssl" />
+	<requirement check="php" type="extension" name="ctype" />
+	<requirement check="php" type="extension" name="zip" />
+	<requirement check="php" type="extension" name="zlib" />
+	<requirement check="php" type="extension" name="gd" />
+	<requirement check="php" type="extension" name="SimpleXML" />
+	<requirement check="php" type="extension" name="SPL" />
+	<requirement check="php" type="extension" name="pcre" />
+	<requirement check="php" type="extension" name="dom" />
+	<requirement check="php" type="extension" name="xml" />
+	<requirement check="php" type="extension" name="xmlreader" />
+	<requirement check="php" type="extension" name="json" />
+	<requirement check="php" type="extension" name="hash" />
+	<requirement check="php" type="extension" name="fileinfo" />
+	<languages>
+		<english-overview>
+		<font size="5" color="#182e7a">Moodle LMS</font> is the world's most trusted open-source learning management system (LMS). It delivers a powerful set of learner-centric tools to build a collaborative learning environment that empowers both teaching and learning.
+		<br /><br />
+		Moodle is released under the <a href="http://docs.moodle.org/en/License" target="_blank">GNU General Public License</a>.
+		</english-overview>		
+		<english-features>
+		<ul>
+			<li>Whether you want to support deep collaborative learning through group activities like wikis or forums; foster peer review in workshops; run your learners through a checklist for compliance; or provide a full-scale MOOC for thousands of learners - Moodle can support your online education style. <br /></li>
+			<li>Moodle LMS is true, full-featured open source ensures you own your site and your content on your own terms.
+			</li>
+		</ul>
+		</english-features>
+		<english-exp_ad_pass>New password. Leave blank if you do not want to reset the password</english-exp_ad_pass>
+		<english-err_no_username>Please provide the username to reset the password</english-err_no_username>
+		<english-err_no_such_user>The Admin username is incorrect and does not exist!</english-err_no_such_user>
+		<english-no_pass_encrypt>Could not encrypt admin password because the domain is not pointing to the correct server</english-no_pass_encrypt>
+	</languages>
+</soft>

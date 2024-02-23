@@ -1,0 +1,105 @@
+MODX Revolution 2.8.3-pl (May 28, 2021)
+====================================
+- XSS issues reported by Solar Security (#15720)
+- Patch MagpieRSS for basic use in PHP 8 (#15721)
+- Avoid setting headers for modStaticResource when returning content (#15715)
+- Adjust filtering of placeholders and accessible options for `@SELECT` (#15714)
+- Fix incorrect id format (#15709)
+- Fix filesize() calculation for static resources (#15697)
+- Return content from non-binary static resources (#15702)
+- Fix PHP 8 compatibility with phpThumb (#15706)
+- Fix PHP 8 warnings in modPhpThumb (#15705)
+- Fix PHPMailer version display (#15704)
+- PHP 8 compatibility (#15699)
+- Pass auth token to Browser controller config (#15692)
+- Update to PHPMailer 6.4.1 (#15693)
+
+MODX Revolution 2.8.2-pl (April 28, 2021)
+====================================
+- Reduce log_level to WARN on cache errors [#15532]
+- Prevent access to sensitive user data [#15678]
+- Exclude sensitive config values from placeholders [#15677]
+- Flatten nested lexicon parameters by dot notation [#15490]
+- Add permissions to enforce access to specific resource types [#15655]
+- Restrict static resources to predefined path [#15656]
+- Support SameSite attribute in session cookies [#15666]
+- Strip base_url only from beginning of relative url [#15418]
+- Remove legacy file manager processors [#15646]
+- Fix invalid getOption call in modResource->filterPathSegment [#15647]
+- Restrict file management to allowed file types [#15643]
+- Prevent XSSI access to `MODx.config` by requiring auth token [#15644]
+- Add missing password validation characters to lexicon [#15611]
+- Update PHPMailer to 6.4.0 [#15618]
+- Update xPDO to version 2.8.3-pl
+- Remove unnecessary type="text/javascript" [#15570]
+- Implement isDirty function in MODx.panel.ImageTV and MODx.panel.FileTV [#15534]
+- Improve the lexicon entry for mail_smtp_prefix [#15527]
+- Update url in system setting base_help_url [#15571]
+- Update Smarty to 3.1.39 [#15566]
+- Add mail_smtp_autotls system setting [#15536]
+- Fix bug with special chars in directory or file names [#15505]
+- Update base_help_url system setting [#15571]
+- Improve the processor permission response error message [#15402]
+- Change modSessionHandler->gc() to return number of removed sessions [#15393]
+- PHP 8 Compatibility [#15335]
+- Improve removal of nested MODX tag content in sanitizeRequest [#15367]
+- Fix Plugin and Template name validation [#15349]
+- Fix missing package signature when uninstalling [#15315]
+
+MODX Revolution 2.8.1-pl (October 22, 2020)
+====================================
+- Fix alias_visible/syncsite checkboxes when switching templates [#15289]
+- Allow directories with name "0" [#15296]
+- Fix login button margins on mobile [#15300]
+- Hide Update User Group button on Users tab when editing User Group [#15290]
+- Only log session info if session is initialized [#15292]
+- Avoid returning resource_groups on resource save [#15293]
+- Fix JS TypeError if image/file TV fails validation [#15282]
+- Add `upload_check_exists` system setting [#15285]
+- Fix XSS in resource group name at TV > Access Permissions [#15280]
+- Fix XSS in resource list TV [#15280]
+- Fix fatal error in url TV input type [#15279]
+- Fix fatal error in System Info [#15277]
+
+MODX Revolution 2.8.0-pl (October 6, 2020)
+====================================
+- Prevent limited manager users from interacting with files in any media source
+- Fix assorted stored XSS issues in the manager [#15273]
+- Fix XSS in file upload and file tree [#15262]
+- Fix display of pagination toolbar [#15246]
+- Add check existing file on upload [#15232]
+- Update Smarty to 3.1.36 [#15249]
+- Prevent potential XXE vulnerability in modRestService [#15238]
+- Fix incorrect path setting when uploading files [#15227]
+- Add indication of selected file and expand active source in tree [#15228]
+- Display caption instead of description in template TV grid [#15231]
+- Create dedicated method to get resource preview URL [#14954]
+- Fix bug when emptying resource trash [#15171]
+- Fix url parameters in config.js processor [#15165]
+- Localize anonymous in context interface [#15153]
+- Update xPDO to 2.8.1
+- Use 0 if id is undefined [#15103]
+- Load tree_show_resource_ids permission [#15101]
+- Set error message by field name instead of id [#15099]
+- Fix typeAhead parameter check [#15069]
+- Prevent XSS on template name in TV template access grid [#15142]
+- Fix login screen PHP notice [#15140]
+- Prevent XSS on Template's name [#15137]
+- Prevent path traversal when sending registry message [#15134]
+- Fix combocolumn grid refresh [#15122]
+- Will add the image format `webp` to the list of allowed `Uploadable File Types` and `Uploadable Image Types` [#15114]
+- Add "Allow Blank" setting to URL, RichText, Image & File Template Variables [#15106]
+- New lexicon for edit content type [#15095]
+- Add numberfield as Field Type option for system settings [#15092]
+- Add responsive styles for login screen [#15048]
+- Prevent rewrite of .well-known directory used by LetsEncrypt [#15033]
+- Allow custom values in Listbox (Multi-Select) TV [#14957]
+- Fix DSN creation during an update with an existing port [#15083]
+- Update phpThumb 1.7.15 [#15071]
+- Clear phpThumb connector properties [#15055]
+- Update PHPMailer to 5.2.28 [#15041]
+- Fix a Fatal Error when upgrading from MODX Revolution 2.5.x or earlier [#15053]
+- Improve the error handling and showing invalid fields when creating/editing resources or elements [#14743, #15116, #15088]
+- Prevent error when creating a new folder in media source root [#15263]
+- Add "Update User Group" button to Access Control Lists > User Groups & Users for easier navigation [#15270]
+

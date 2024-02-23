@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+app
+builds
+composer.json
+composer.lock
+env
+phpunit.xml.dist
+public
+spark
+tests
+vendor
+writable
+.env
+.htaccess
