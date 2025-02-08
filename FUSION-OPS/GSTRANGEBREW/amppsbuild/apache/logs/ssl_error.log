@@ -1,3 +1,0 @@
-[Wed Oct 13 04:31:27.262203 2021] [core:error] [pid 37581] [client 222.190.142.202:1483] AH00126: Invalid URI in request GET /cgi-bin/.%2E/%2E%2E/%2E%2E/%2E%2E/etc/passwd HTTP/1.1
-[Wed Oct 13 04:38:47.681227 2021] [php7:error] [pid 42065] [client 45.146.164.110:43802] script '/Applications/AMPPS/www/index.php' not found or unable to stat
-[Wed Oct 13 06:55:48.847642 2021] [core:error] [pid 36761] [client 185.180.143.136:46362] AH00126: Invalid URI in request HEAD /icons/.%2e/%2e%2e/apache2/icons/sphere1.png HTTP/1.1
